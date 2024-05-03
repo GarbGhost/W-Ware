@@ -27,10 +27,17 @@ img {
 /** Local config */
 body {
   min-width: 320px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Muller", sans-serif;
   font-size: 1em;
   min-height: 100%;
   color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+  background-color: #c5bc4b;
 }
 
 .list-reset {
@@ -53,10 +60,6 @@ body {
   --color-blue: #3f2aff;
   --color-white: #ffffff;
   --color-sundance: #c5bc4b;
-}
-
-.no-padding {
-  padding: 0;
 }
 
 .flex {

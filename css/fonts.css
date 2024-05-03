@@ -1,43 +1,43 @@
 @font-face {
-  font-family: 'Muller';
   src: url('css/fonts.css/Muller-Bold.woff2') format('woff2'),
       url('css/fonts.css/Muller-Bold.woff') format('woff');
+  font-family: Muller;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Muller';
   src: url('css/fonts.css/Muller-RegularItalic.woff2') format('woff2'),
       url('css/fonts.css/Muller-RegularItalic.woff') format('woff');
+  font-family: Muller;
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Muller';
   src: url('css/fonts.css/Muller-Medium.woff2') format('woff2'),
       url('css/fonts.css/Muller-Medium.woff') format('woff');
+  font-family: Muller;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Muller';
   src: url('css/fonts.css/Muller-Regular.woff2') format('woff2'),
       url('css/fonts.css/Muller-Regular.woff') format('woff');
+  font-family: Muller;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Muller';
   src: url('css/fonts.css/Muller-LightItalic.woff2') format('woff2'),
       url('css/fonts.css/Muller-LightItalic.woff') format('woff');
+  font-family: Muller;
   font-weight: 300;
   font-style: italic;
   font-display: swap;

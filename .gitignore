@@ -3,6 +3,7 @@
 .AppleDouble
 .LSOverride
 # Main
+.vscode
 .stylelintignore
 .stylelintrc.json
 package-lock.json

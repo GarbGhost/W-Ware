@@ -15,33 +15,32 @@
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
   <link href="./css/fonts.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="container header__container flex">
-      <a class="header__logo logo" href="#">
-        <svg>
-          <use xlink:href="./sprite.svg#logo"></use>
-        </svg>
+      <a class="logo header__logo " href="#" target="_blank">
+        <img src="./image/icon/logo.svg" alt="Логотип Радио W-Ware" loading="lazy">
       </a>
       <nav class="header__nav nav">
         <ul class="nav__list list-reset flex">
-          <li class="nav__item">
-            <a class="nav__link" href="#"></a>Подкасты
+          <li class="nav__item flex">
+            <a class="nav__link" href="#">Подкасты</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#"></a>Передачи
+          <li class="nav__item flex">
+            <a class="nav__link" href="#">Передачи</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#"></a>Гости
+          <li class="nav__item flex">
+            <a class="nav__link" href="#">Гости</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#"></a>Плейлисты
+          <li class="nav__item flex">
+            <a class="nav__link" href="#">Плейлисты</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#"></a>О нас
+          <li class="nav__item flex">
+            <a class="nav__link" href="#">О нас</a>
           </li>
         </ul>
       </nav>
@@ -64,7 +63,7 @@
           жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого
           эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
         </p>
-        <a href="#" class="hero__btn btn-reset">Слушать эфир</a>
+        <a class="hero__btn btn-reset" href="#" type="button">Слушать эфир</a>
       </div>
       <div class="hero__image">
         <picture>
@@ -79,8 +78,8 @@
       <h2 class="title podcast__title">Подкасты</h2>
       <ul class="podcast__list list-reset flex">
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня
-            <img src="./image/picture/europa@1x.jpg" alt="">
+          <a class="podcast__link" href="#">14 июня
+            <img src="./image/picture/europa@1x.jpg" alt>
           </a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="15:43">15:43</time>
@@ -89,7 +88,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="5:32">5:32</time>
             <h3 class="podcast-card__title">О&nbsp;музыке</h3>
@@ -97,7 +96,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="8:54">8:54</time>
             <h3 class="podcast-card__title">Люди сегодня</h3>
@@ -105,7 +104,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="9:04">9:04</time>
             <h3 class="podcast-card__title">Хэллоу, Африка!</h3>
@@ -113,7 +112,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="7:03">7:03</time>
             <h3 class="podcast-card__title">Обо всём</h3>
@@ -121,7 +120,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="9:15">9:15</time>
             <h3 class="podcast-card__title">Физика цвета</h3>
@@ -129,7 +128,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="16:04">16:04</time>
             <h3 class="podcast-card__title">Источник звука</h3>
@@ -137,7 +136,7 @@
           </article>
         </li>
         <li class="podcast__item">
-          <a href="#" class="podcast__link">14 июня</a>
+          <a class="podcast__link" href="#">14 июня</a>
           <article class="podcast-card">
             <time class="podcast-card__time" datetime="6:55">6:55</time>
             <h3 class="podcast-card__title">Правила этикета</h3>
@@ -151,7 +150,7 @@
     <div class="container broadcast__container flex">
       <div class="broadcast__content flex">
         <h2 class="title broadcast__title">Передачи</h2>
-        <a href="#" class="broadcast-btn">Архив</a>
+        <a class="broadcast-btn" href="#">Архив</a>
         <p class="broadcast-btn__descr">
           В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
         </p>
@@ -161,42 +160,42 @@
           <article class="broadcast-card">
             <h3 class="broadcast-card__title">О&nbsp;людях и&nbsp;книгах</h3>
             <p class="broadcast-card__descr">Анонсируется отдельно</p>
-            <a href="#" class="broadcast-card__btn">Подробнее</a>
+            <a class="broadcast-card__btn" href="#">Подробнее</a>
           </article>
         </li>
         <li class="broadcast__item">
           <article class="broadcast-card">
             <h3 class="broadcast-card__title">Графомания&nbsp;td</h3>
             <p class="broadcast-card__descr">По&nbsp;понедельникам в&nbsp;10:00</p>
-            <a href="#" class="broadcast-card__btn">Подробнее</a>
+            <a class="broadcast-card__btn" href="#">Подробнее</a>
           </article>
         </li>
         <li class="broadcast__item">
           <article class="broadcast-card">
             <h3 class="broadcast-card__title">Не&nbsp;Рим, не&nbsp;Троя</h3>
             <p class="broadcast-card__descr">По&nbsp;вторникам в&nbsp;12:00</p>
-            <a href="#" class="broadcast-card__btn">Подробнее</a>
+            <a class="broadcast-card__btn" href="#">Подробнее</a>
           </article>
         </li>
         <li class="broadcast__item">
           <article class="broadcast-card">
             <h3 class="broadcast-card__title">Эрудит</h3>
             <p class="broadcast-card__descr">По&nbsp;пятницам в&nbsp;17:00</p>
-            <a href="#" class="broadcast-card__btn">Подробнее</a>
+            <a class="broadcast-card__btn" href="#">Подробнее</a>
           </article>
         </li>
         <li class="broadcast__item">
           <article class="broadcast-card">
             <h3 class="broadcast-card__title">Тонкости эпох</h3>
             <p class="broadcast-card__descr">По&nbsp;субботам в&nbsp;10:00</p>
-            <a href="#" class="broadcast-card__btn">Подробнее</a>
+            <a class="broadcast-card__btn" href="#">Подробнее</a>
           </article>
         </li>
         <li class="broadcast__item">
           <article class="broadcast-card">
             <h3 class="broadcast-card__title">Живые мысли</h3>
             <p class="broadcast-card__descr">По&nbsp;воскресеньям в&nbsp;15:30</p>
-            <a href="#" class="broadcast-card__btn">Подробнее</a>
+            <a class="broadcast-card__btn" href="#">Подробнее</a>
           </article>
         </li>
       </ul>
@@ -214,7 +213,7 @@
 
       <article class="guest-card">
         <picture class="guest-card__image">
-          <img src="./image/person/martynova@1x.jpg" alt="">
+          <img src="./image/person/martynova@1x.jpg" alt>
         </picture>
         <h3 class="guest-card__title">Ольга Мартынова</h3>
         <p class="guest-card__text">
@@ -222,12 +221,12 @@
           &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим
           является с&nbsp;2016&nbsp;года.
         </p>
-        <a href="#" class="guest-card__btn">Эфиры с гостем</a>
+        <a class="guest-card__btn" href="#">Эфиры с гостем</a>
       </article>
 
       <article class="guest-card">
         <picture class="guest-card__image">
-          <img src="./image/person/grushyn@1x.jpg" alt="">
+          <img src="./image/person/grushyn@1x.jpg" alt>
         </picture>
         <h3 class="guest-card__title">Денис Гришин</h3>
         <p class="guest-card__text">
@@ -235,12 +234,12 @@
           с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
           их&nbsp;статус бесполезности.
         </p>
-        <a href="#" class="guest-card__btn">Эфиры с гостем</a>
+        <a class="guest-card__btn" href="#">Эфиры с гостем</a>
       </article>
 
       <article class="guest-card">
         <picture class="guest-card__image">
-          <img src="./image/person/olga-martynova@1x.jpg" alt="">
+          <img src="./image/person/olga-martynova@1x.jpg" alt>
         </picture>
         <h3 class="guest-card__title">Ольга Мартынова</h3>
         <p class="guest-card__text">
@@ -248,7 +247,7 @@
           направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных
           источников.
         </p>
-        <a href="#" class="guest-card__btn">Эфиры с гостем</a>
+        <a class="guest-card__btn" href="#">Эфиры с гостем</a>
       </article>
     </div>
   </section>
@@ -363,7 +362,7 @@
         трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
       </p>
       <span class="sale__price">2&nbsp;800&nbsp;₽</span>
-      <a href="#" class="sale__btn">Купить на&nbsp;Яндекс.Маркет</a>
+      <a class="sale__btn" href="#">Купить на&nbsp;Яндекс.Маркет</a>
     </div>
   </section>
   <section class="about">
@@ -408,19 +407,19 @@
           <p class="about-cards__descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
         </div>
       </div>
-      <form action="#" class="about-form">
-        <textarea class="about-form__textarea" name="" id="">
+      <form class="about-form" action="#">
+        <textarea class="about-form__textarea" id name>
           Что скажете?
         </textarea>
         <label>
-          <input type="text" class="about-form__name" placeholder="Имя">
+          <input class="about-form__name" type="text" placeholder="Имя">
         </label>
         <label>
-          <input type="email" class="about-form__name" placeholder="Email">
+          <input class="about-form__name" type="email" placeholder="Email">
         </label>
         <div class="about-submit">
           <button class="about-form__btn">Отправить</button>
-          <input type="checkbox" class="about-submit__check">
+          <input class="about-submit__check" type="checkbox">
           <p class="about-submit__agreement">Согласен на&nbsp;обработку персональных данных</p>
         </div>
       </form>
@@ -452,31 +451,31 @@
           <div class="footer-content">
             <ul class="footer-content__list list-reset flex">
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Подкасты</a>
+                <a class="footer-content__link" href="#">Подкасты</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Передачи</a>
+                <a class="footer-content__link" href="#">Передачи</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Гости</a>
+                <a class="footer-content__link" href="#">Гости</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Плейлисты</a>
+                <a class="footer-content__link" href="#">Плейлисты</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Сетка</a>
+                <a class="footer-content__link" href="#">Сетка</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">О нас</a>
+                <a class="footer-content__link" href="#">О нас</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Новости</a>
+                <a class="footer-content__link" href="#">Новости</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Блоги</a>
+                <a class="footer-content__link" href="#">Блоги</a>
               </li>
               <li class="footer-content__item">
-                <a href="#" class="footer-content__link">Топы</a>
+                <a class="footer-content__link" href="#">Топы</a>
               </li>
             </ul>
           </div>

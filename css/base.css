@@ -17,6 +17,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   overflow: hidden;
@@ -71,6 +72,8 @@ body {
 
   --font-family: "Muller", sans-serif;
   --second-family: "Muller-Trial", sans-serif;
+
+  --gap: 30px;
 }
 
 .flex {
@@ -109,4 +112,8 @@ p {
 svg {
   width: inherit;
   height: inherit;
+}
+
+figure {
+  margin: 0;
 }

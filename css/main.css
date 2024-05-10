@@ -1,3 +1,5 @@
+/* stylelint-disable value-keyword-case */
+/* stylelint-disable no-descending-specificity */
 .header {
   padding-top: 26px;
   padding-bottom: 34px;
@@ -268,11 +270,31 @@
 }
 
 .button--broadcast-color {
+  outline: none;
   border: 2px solid var(--black);
   border-radius: 77px;
   padding: 9px 54px;
   color: var(--black);
   background-color: transparent;
+  transition: color .3s, border-color .3s, background .3s;
+
+  &:focus-visible {
+    border-color: var(--primary);;
+    color: var(--white);
+    background: var(--primary-light);
+  }
+
+  &:hover {
+    border-color: currentColor;
+    color: var(--white);
+    background: var(--primary);
+  }
+
+  &:active {
+    border-color: currentColor;
+    color: var(--white);
+    background: var(--primary-shade);
+  }
 }
 
 .broadcast__list {
@@ -309,18 +331,44 @@
   flex-wrap: wrap;
   align-items: center;
   margin-top: auto;
+  outline: none;
   width: fit-content;
   font-family: var(--second-family);
   font-weight: 400;
   font-style: italic;
   font-size: 16px;
   color: var(--black);
+  transition: color 0.3s, stroke 0.3s, background .3s;
 
-  &.broadcast-card__btn svg {
+  & svg {
     width: 26px;
     height: 12px;
     stroke: #121723;
-    stroke-width: 0.5px;
+  }
+
+  &:focus-visible {
+    color: var(--white);
+    background: var(--primary-light);
+    
+    &:focus-visible svg{
+      stroke: currentColor;
+    }
+  }
+
+  &:hover {
+    color: var(--primary);
+
+    &:hover svg {
+      stroke: currentcolor;
+    }
+  }
+
+  &:active {
+    color: var(--primary-shade);
+
+    &:active svg {
+      stroke: currentColor;
+    }
   }
 }
 

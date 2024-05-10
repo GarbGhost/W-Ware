@@ -19,4 +19,8 @@
   .hero__image {
     display: none;
   }
+
+  .broadcast__list {
+    --offsets: 1;
+  }
 }

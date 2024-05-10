@@ -83,20 +83,20 @@
 
           <li class="podcast__item ">
             <article class="podcast-card ">
-            <a class="podcast-card__link flex" href="#">
-              <figure class="podcast-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="./image/podcast/europa.webp">
-                  <img src="./image/podcast/about.jpg" width="112" height="140" alt="Изображение города на реке">
-                  <figcaption class="podcast-wrapper__caption">14 июня</figcaption>
-                </picture>
-              </figure>
-              <div class="podcast-body">
-                <time class="podcast-body__time" aria-label="Время начала">15:43</time>
-                <h3 class="podcast-body__title">Европа. XIX век.</h3>
-                <span class="podcast-body__name">Дмитрий Гутенберг</span>
-              </div>
-            </a>
+              <a class="podcast-card__link flex" href="#">
+                <figure class="podcast-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./image/podcast/europa.webp">
+                    <img src="./image/podcast/about.jpg" width="112" height="140" alt="Изображение города на реке">
+                    <figcaption class="podcast-wrapper__caption">14 июня</figcaption>
+                  </picture>
+                </figure>
+                <div class="podcast-body">
+                  <time class="podcast-body__time" aria-label="Время начала">15:43</time>
+                  <h3 class="headline headline--podcast">Европа. XIX век.</h3>
+                  <span class="description description--podcast">Дмитрий Гутенберг</span>
+                </div>
+              </a>
             </article>
           </li>
 
@@ -113,8 +113,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">5:32</time>
-                  <h3 class="podcast-body__title">О&nbsp;музыке</h3>
-                  <span class="podcast-body__name">Дмитрий Гутенберг</span>
+                  <h3 class="headline headline--podcast">О&nbsp;музыке</h3>
+                  <span class="description description--podcast">Дмитрий Гутенберг</span>
                 </div>
               </a>
             </article>
@@ -132,8 +132,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">8:54</time>
-                  <h3 class="podcast-body__title">Люди сегодня</h3>
-                  <span class="podcast-body__name">Анна Васильева</span>
+                  <h3 class="headline headline--podcast">Люди сегодня</h3>
+                  <span class="description description--podcast">Анна Васильева</span>
                 </div>
               </a>
             </article>
@@ -151,8 +151,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">9:04</time>
-                  <h3 class="podcast-body__title">Хэллоу, Африка!</h3>
-                  <span class="podcast-body__name">Пётр Дмитриевский</span>
+                  <h3 class="headline headline--podcast">Хэллоу, Африка!</h3>
+                  <span class="description description--podcast">Пётр Дмитриевский</span>
                 </div>
               </a>
             </article>
@@ -170,8 +170,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">7:03</time>
-                  <h3 class="podcast-body__title">Обо всём</h3>
-                  <span class="podcast-body__name">Пётр Дмитриевский</span>
+                  <h3 class="headline headline--podcast">Обо всём</h3>
+                  <span class="description description--podcast">Пётр Дмитриевский</span>
                 </div>
               </a>
             </article>
@@ -189,8 +189,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">9:15</time>
-                  <h3 class="podcast-body__title">Физика цвета</h3>
-                  <span class="podcast-body__name">Татьяна Флеганова</span>
+                  <h3 class="headline headline--podcast">Физика цвета</h3>
+                  <span class="description description--podcast">Татьяна Флеганова</span>
                 </div>
               </a>
             </article>
@@ -200,7 +200,8 @@
               <a class="podcast-card__link flex" href="#">
                 <figure class="podcast-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="./image/podcast/sound-source.webp">
+                    <source type="image/webp" srcset="./image/podcast/sound-source.wbp">
+                    <source srcset="./image/podcast/sound-source.jpg">
                     <img src="./image/podcast/sound-source.jpg" width="112" height="140"
                       alt="Изображение музыканта со скрипкой">
                   </picture>
@@ -208,8 +209,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">16:04</time>
-                  <h3 class="podcast-body__title">Источник звука</h3>
-                  <span class="podcast-body__name">Пётр Дмитриевский</span>
+                  <h3 class="headline headline--podcast">Источник звука</h3>
+                  <span class="description description--podcast">Пётр Дмитриевский</span>
                 </div>
               </a>
             </article>
@@ -227,8 +228,8 @@
                 </figure>
                 <div class="podcast-body">
                   <time class="podcast-body__time" aria-label="Время начала">6:55</time>
-                  <h3 class="podcast-body__title">Правила этикета</h3>
-                  <span class="podcast-body__name">Татьяна Флеганова</span>
+                  <h3 class="headline headline--podcast">Правила этикета</h3>
+                  <span class="description description--podcast">Татьяна Флеганова</span>
                 </div>
               </a>
             </article>
@@ -238,58 +239,119 @@
     </section>
     <section class="broadcast">
       <div class="container broadcast__container flex">
-        <div class="broadcast__content flex">
-          <h2 class="title broadcast__title">Передачи</h2>
-          <a class="broadcast-btn" href="#">Архив</a>
-          <p class="broadcast-btn__descr">
-            В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
-          </p>
+        <div class="broadcast-body flex">
+          <h2 class="title broadcast-body__title">Передачи</h2>
+          <div class="broadcast-body__content">
+            <a class="button button--broadcast-color" href="#">Архив</a>
+            <p class="broadcast-body__descr">
+              В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
+            </p>
+          </div>
         </div>
         <ul class="broadcast__list list-reset flex">
           <li class="broadcast__item">
-            <article class="broadcast-card">
-              <h3 class="broadcast-card__title">О&nbsp;людях и&nbsp;книгах</h3>
-              <p class="broadcast-card__descr">Анонсируется отдельно</p>
-              <a class="broadcast-card__btn" href="#">Подробнее</a>
+            <article class="broadcast-card flex">
+              <picture>
+                <source type="image/webp" srcset="./image/broadcast/broadcast-card-1.webp">
+                <img src="./image/broadcast/broadcast-card-1.jpg" alt="">
+              </picture>
+              <div class="broadcast-card__content flex">
+                <h3 class="headline headline--broadcast">О&nbsp;людях и&nbsp;книгах</h3>
+                <p class="description description--broadcast">Анонсируется отдельно</p>
+                <a class="broadcast-card__btn flex" href="#">Подробнее
+                  <svg>
+                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
             </article>
           </li>
           <li class="broadcast__item">
-            <article class="broadcast-card">
-              <h3 class="broadcast-card__title">Графомания&nbsp;td</h3>
-              <p class="broadcast-card__descr">По&nbsp;понедельникам в&nbsp;10:00</p>
-              <a class="broadcast-card__btn" href="#">Подробнее</a>
+            <article class="broadcast-card flex">
+              <picture>
+                <source type="image/webp" srcset="./image/broadcast/broadcast-card-2.webp">
+                <img src="./image/broadcast/broadcast-card-2.jpg" alt="">
+              </picture>
+              <div class="broadcast-card__content flex">
+                <h3 class="headline headline--broadcast">Графомания&nbsp;td</h3>
+                <p class="description description--broadcast">По&nbsp;понедельникам в&nbsp;10:00</p>
+                <a class="broadcast-card__btn flex" href="#">Подробнее
+                  <svg>
+                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
             </article>
           </li>
           <li class="broadcast__item">
-            <article class="broadcast-card">
-              <h3 class="broadcast-card__title">Не&nbsp;Рим, не&nbsp;Троя</h3>
-              <p class="broadcast-card__descr">По&nbsp;вторникам в&nbsp;12:00</p>
-              <a class="broadcast-card__btn" href="#">Подробнее</a>
+            <article class="broadcast-card flex">
+              <picture>
+                <source type="image/webp" srcset="./image/broadcast/broadcast-card-3.webp">
+                <img src="./image/broadcast/broadcast-card-3.jpg" alt="">
+              </picture>
+              <div class="broadcast-card__content flex">
+                <h3 class="headline headline--broadcast">Не&nbsp;Рим, не&nbsp;Троя</h3>
+                <p class="description description--broadcast">По&nbsp;вторникам в&nbsp;12:00</p>
+                <a class="broadcast-card__btn flex" href="#">Подробнее
+                  <svg>
+                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
             </article>
           </li>
           <li class="broadcast__item">
-            <article class="broadcast-card">
-              <h3 class="broadcast-card__title">Эрудит</h3>
-              <p class="broadcast-card__descr">По&nbsp;пятницам в&nbsp;17:00</p>
-              <a class="broadcast-card__btn" href="#">Подробнее</a>
+            <article class="broadcast-card flex">
+              <picture>
+                <source type="image/webp" srcset="./image/broadcast/broadcast-card-4.webp">
+                <img src="./image/broadcast/broadcast-card-4.jpg" alt="">
+              </picture>
+              <div class="broadcast-card__content flex">
+                <h3 class="headline headline--broadcast">Эрудит</h3>
+                <p class="description description--broadcast">По&nbsp;пятницам в&nbsp;17:00</p>
+                <a class="broadcast-card__btn flex" href="#">Подробнее
+                  <svg>
+                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
             </article>
           </li>
           <li class="broadcast__item">
-            <article class="broadcast-card">
-              <h3 class="broadcast-card__title">Тонкости эпох</h3>
-              <p class="broadcast-card__descr">По&nbsp;субботам в&nbsp;10:00</p>
-              <a class="broadcast-card__btn" href="#">Подробнее</a>
+            <article class="broadcast-card flex">
+              <picture>
+                <source type="image/webp" srcset="./image/broadcast/broadcast-card-5.webp">
+                <img src="./image/broadcast/broadcast-card-5.jpg" alt="">
+              </picture>
+              <div class="broadcast-card__content flex">
+                <h3 class="headline headline--broadcast">Тонкости эпох</h3>
+                <p class="description description--broadcast">По&nbsp;субботам в&nbsp;10:00</p>
+                <a class="broadcast-card__btn flex" href="#">Подробнее
+                  <svg>
+                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
             </article>
           </li>
           <li class="broadcast__item">
-            <article class="broadcast-card">
-              <h3 class="broadcast-card__title">Живые мысли</h3>
-              <p class="broadcast-card__descr">По&nbsp;воскресеньям в&nbsp;15:30</p>
-              <a class="broadcast-card__btn" href="#">Подробнее</a>
+            <article class="broadcast-card flex">
+              <picture>
+                <source type="image/webp" srcset="./image/broadcast/broadcast-card-6.webp">
+                <img src="./image/broadcast/broadcast-card-6.jpg" alt="">
+              </picture>
+              <div class="broadcast-card__content flex">
+                <h3 class="headline headline--broadcast">Живые мысли</h3>
+                <p class="description description--broadcast">По&nbsp;воскресеньям в&nbsp;15:30</p>
+                <a class="broadcast-card__btn flex" href="#">Подробнее
+                  <svg>
+                    <use xlink:href="./sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
             </article>
           </li>
         </ul>
-
       </div>
     </section>
     <section class="guests">

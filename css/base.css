@@ -99,6 +99,17 @@ p {
   line-height: 1;
 }
 
+.headline {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.description {
+  font-weight: 400;
+  color: var(--text-gray);
+}
+
 .button {
   display: flex;
   align-items: center;

@@ -28,7 +28,7 @@ img {
 /** Local config */
 body {
   min-width: 320px;
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), var(--second-family), var(--third-family), sans-serif;
   font-size: 1em;
   min-height: 100%;
   color: #000;
@@ -70,8 +70,9 @@ body {
   --promo-color: #f0d288;
   --promo-color-shade: #bb973e;
 
-  --font-family: "Muller", sans-serif;
-  --second-family: "Muller-Trial", sans-serif;
+  --font-family: "Muller";
+  --second-family: "Muller-Trial";
+  --third-family: "Open Sans";
 
   --gap: 30px;
 }
@@ -107,6 +108,7 @@ p {
 
 .description {
   font-weight: 400;
+  font-size: 16px;
   color: var(--text-gray);
 }
 

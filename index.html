@@ -355,151 +355,213 @@
       </div>
     </section>
     <section class="guests">
-      <div class="container">
-        <h2 class="guests__title">Гости</h2>
+      <div class="container guests__container">
+        <h2 class="guests__title title">Гости</h2>
         <span class="guests__descr">У&nbsp;нас бывают:</span>
         <p class="guests__text">
           Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи
           и&nbsp;много других интересных гостей!
         </p>
 
-        <article class="guest-card">
+        <article class="guest-card flex">
           <picture class="guest-card__image">
+            <source srcset="./image/person/martynova@1x.avif 1x" type="image/avif" sizes="(min-width: 1150px) 432px">
+            <source srcset="./image/person/martynova@2x.avif 2x" type="image/avif">
             <img src="./image/person/martynova@1x.jpg" alt>
           </picture>
-          <h3 class="guest-card__title">Ольга Мартынова</h3>
-          <p class="guest-card__text">
-            Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты
-            &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;,
-            коим
-            является с&nbsp;2016&nbsp;года.
-          </p>
-          <a class="guest-card__btn" href="#">Эфиры с гостем</a>
+          <div class="guest-card__body flex">
+            <h3 class="headline headline--guest">Ольга Мартынова</h3>
+            <p class="description description--guest">
+              Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты
+              &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;,
+              коим
+              является с&nbsp;2016&nbsp;года.
+            </p>
+            <a class="button guest-card__btn" href="#">Эфиры с гостем</a>
+          </div>
         </article>
-
-        <article class="guest-card">
+        <article class="guest-card flex">
           <picture class="guest-card__image">
+            <source srcset="./image/person/grushyn@1x.avif 1x" type="image/avif" sizes="(min-width: 1150px) 432px">
+            <source srcset="./image/person/grushyn@2x.avif 2x" type="image/avif">
             <img src="./image/person/grushyn@1x.jpg" alt>
           </picture>
-          <h3 class="guest-card__title">Денис Гришин</h3>
-          <p class="guest-card__text">
-            Однозначно, элементы политического процесса являются только методом политического участия и&nbsp;смешаны
-            с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
-            их&nbsp;статус бесполезности.
-          </p>
-          <a class="guest-card__btn" href="#">Эфиры с гостем</a>
+          <div class="guest-card__body flex">
+            <h3 class="headline headline--guest">Денис Гришин</h3>
+            <p class="description description--guest">
+              Однозначно, элементы политического процесса являются только методом политического участия и&nbsp;смешаны
+              с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
+              их&nbsp;статус бесполезности.
+            </p>
+            <a class="button guest-card__btn" href="#">Эфиры с гостем</a>
+          </div>
         </article>
-
-        <article class="guest-card">
+        <article class="guest-card flex">
           <picture class="guest-card__image">
+            <source srcset="./image/person/olga-martynova@1x.avif 1x" type="image/avif"
+              sizes="(min-width: 1150px) 432px">
+            <source srcset="./image/person/olga-martynova@2x.avif 2x" type="image/avif">
             <img src="./image/person/olga-martynova@1x.jpg" alt>
           </picture>
-          <h3 class="guest-card__title">Ольга Мартынова</h3>
-          <p class="guest-card__text">
-            С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших
-            направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных
-            источников.
-          </p>
-          <a class="guest-card__btn" href="#">Эфиры с гостем</a>
+          <div class="guest-card__body flex">
+            <h3 class="headline headline--guest">Ольга Мартынова</h3>
+            <p class="description description--guest">
+              С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность
+              дальнейших
+              направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных
+              источников.
+            </p>
+            <a class="button guest-card__btn" href="#">Эфиры с гостем</a>
+          </div>
         </article>
       </div>
     </section>
     <section class="playlists">
-      <div class="container">
-        <div class="playlist-description">
-          <h2 class="title playlist__title">Плейлисты</h2>
-          <p class="playlist__text">
-            Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних
+      <div class="container playlists__container flex">
+        <div class="playlist-body">
+          <h2 class="title playlist-body__title">Плейлисты</h2>
+          <p class="playlist-body__text">
+            Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную <br>для
+            несовершеннолетних
           </p>
-          <span class="playlist__copy">&copy;&nbsp;2021&nbsp;l W-Wave</span>
-          <span class="playlist__age-rating">18+</span>
+          <span class="playlist-body__copy">&copy;&nbsp;2021&nbsp;l W-Wave</span>
+          <span class="playlist-body__age-rating">18+</span>
         </div>
-        <div class="playlist-cards flex">
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/ploho@1x.jpg" alt="постер группы Ploho">
+        <ul class="play-list flex list-reset">
+
+          <li class="play-list__item">
+            <picture class="play-list__image play-list__image--russia">
+              <source srcset="./image/playlist/ploho.avif" type="image/avif">
+              <source srcset="./image/playlist/ploho.jpg">
+              <img src="./image/playlist/ploho1x.jpg" alt="постер группы Ploho">
             </picture>
-            <h3 class="playlist-card__title">Ploho</h3>
-            <p class="playlist-card__song">3&nbsp;последних альбома</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/molchat-doma@1x.jpg" alt="постер группы Molchat Doma">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Ploho</h3>
+              <p class="description description--playlist">3&nbsp;последних альбома</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image play-list__image--russia">
+              <source type="image/avif" srcset="./image/playlist/molchat-doma.avif">
+              <img src="./image/playlist/molchat-doma.jpg" alt="постер группы Molchat Doma">
             </picture>
-            <h3 class="playlist-card__title">Molchat Doma</h3>
-            <p class="playlist-card__song">Все песни</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/motorama@1x.jpg" alt="постер группы Motorama">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Molchat Doma</h3>
+              <p class="description description--playlist">Все песни</p>
+            </div>
+          </li>
+
+          <li class="play-list__item">
+            <picture class="play-list__image play-list__image--russia">
+              <source type="image/avif" srcset="./image/playlist/motorama.avif">
+              <img src="./image/playlist/motorama.jpg" alt="постер группы Motorama">
             </picture>
-            <h3 class="playlist-card__title">Motorama</h3>
-            <p class="playlist-card__song">Все синглы</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/human-tetris@1x.jpg" alt="постер группы Human Tetris">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Motorama</h3>
+              <p class="description description--playlist">Все синглы</p>
+            </div>
+          </li>
+
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--russia">
+              <source type="image/avif" srcset="./image/playlist/human-tetris.avif">
+              <img src="./image/playlist/human-tetris.jpg" alt="постер группы Human Tetris">
             </picture>
-            <h3 class="playlist-card__title">Human Tetris</h3>
-            <p class="playlist-card__song">3&nbsp;последних альбома</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/buerak@1x.jpg" alt="постер группы Буерак">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Human Tetris</h3>
+              <p class="description description--playlist">3&nbsp;последних альбома</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--russia">
+              <source type="image/avif" srcset="./image/playlist/buerak.avif">
+              <img src="./image/playlist/buerak.jpg" alt="постер группы Буерак">
             </picture>
-            <h3 class="playlist-card__title">Буерак</h3>
-            <p class="playlist-card__song">Все&nbsp;EP</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/june-dey@1x.jpg" alt="постер группы Июльские Дни">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Буерак</h3>
+              <p class="description description--playlist">Все&nbsp;EP</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--russia">
+              <source type="image/avif" srcset="./image/playlist/june-dey.avif">
+              <img src="./image/playlist/june-dey.jpg" alt="постер группы Июльские Дни">
             </picture>
-            <h3 class="playlist-card__title">Июльские Дни</h3>
-            <p class="playlist-card__song">Альбом &laquo;Колокол&raquo;</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/joy-division@1x.jpg" alt="постер музыканта Joy Division">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Июльские Дни</h3>
+              <p class="description description--playlist">Альбом &laquo;Колокол&raquo;</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--england">
+              <source type="image/avif" srcset="./image/playlist/joy-division.avif">
+              <img src="./image/playlist/joy-division.jpg" alt="постер музыканта Joy Division">
             </picture>
-            <h3 class="playlist-card__title">Joy Division</h3>
-            <p class="playlist-card__song">Лучшее за&nbsp;всё время</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/thecrue@1x.jpg" alt="постер группы The Cure">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Joy Division</h3>
+              <p class="description description--playlist">Лучшее за&nbsp;всё время</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--england">
+              <source type="image/avif" srcset="./image/playlist/the-cure.avif">
+              <img src="./image/playlist/the-cure.jpg" alt="постер группы The Cure">
             </picture>
-            <h3 class="playlist-card__title">The Cure</h3>
-            <p class="playlist-card__song">Лучшее за&nbsp;всё время</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/thesmiths@1x.jpg" alt="постер группы The Smiths">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">The Cure</h3>
+              <p class="description description--playlist">Лучшее за&nbsp;всё время</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--england">
+              <source type="image/avif" srcset="./image/playlist/the-smiths.avif">
+              <img src="./image/playlist/the-smiths.jpg" alt="постер группы The Smiths">
             </picture>
-            <h3 class="playlist-card__title">The Smiths</h3>
-            <p class="playlist-card__song">Период 1984&ndash;1988</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/new-order@1x.jpg" alt="постер группы New Order">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">The Smiths</h3>
+              <p class="description description--playlist">Период 1984&ndash;1988</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--england">
+              <source type="image/aif" srcset="./image/playist/new-order.avif">
+              <img src="./image/playlist/new-order.jpg" alt="постер группы New Order">
             </picture>
-            <h3 class="playlist-card__title">New Order</h3>
-            <p class="playlist-card__song">Хиты</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/bauhaus@1x.jpg" alt="постер группы Bauhaus">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">New Order</h3>
+              <p class="description description--playlist">Хиты</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--england">
+              <source type="image/avif" srcset="./image/playlist/bauhaus.avif">
+              <img src="./image/playlist/bauhaus.jpg" alt="постер группы Bauhaus">
             </picture>
-            <h3 class="playlist-card__title">Bauhaus</h3>
-            <p class="playlist-card__song">Все синглы</p>
-          </div>
-          <div class="playlist-card">
-            <picture class="playlist-card__image">
-              <img src="./image/playlist/gang of-four@1x.jpg" alt="постер группы Gang Of Four">
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Bauhaus</h3>
+              <p class="description description--playlist">Все синглы</p>
+            </div>
+          </li>
+          <li class="play-list__item">
+            <picture class="play-list__image
+            play-list__image--england">
+              <source type="image/avif" srcset="./image/playlist/gang-of-four.avif">
+              <img src="./image/playlist/gang-of-four.jpg" alt="постер группы Gang Of Four">
             </picture>
-            <h3 class="playlist-card__title">Gang Of&nbsp;Four</h3>
-            <p class="playlist-card__song">3&nbsp;последних альбома</p>
-          </div>
-        </div>
+            <div class="play-list__content">
+              <h3 class="headline headline--playlist">Gang Of&nbsp;Four</h3>
+              <p class="description description--playlist">3&nbsp;последних альбома</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="sale">

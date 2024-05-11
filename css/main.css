@@ -471,7 +471,7 @@
 
 .playlists {
   padding-top: 93px;
-  padding-bottom: 90px;
+  padding-bottom: 93px;
 }
 
 .playlists__container {
@@ -557,10 +557,9 @@
   font-size: 12px;
 }
 
-.play-list__image  {
+.play-list__image {
   display: block;
   max-width: 160px;
-  
 }
 
 .play-list__image::before {
@@ -583,4 +582,131 @@
 
 .play-list__image--england::before {
   background-image: url("../image/icon/flag-england.svg");
+}
+
+/** SALE **/
+
+.sale {
+  padding-top: 95px;
+  padding-bottom: 100px;
+  height: 100vw;
+  background: var(--light-black);
+}
+
+.sale__container {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.sale__image {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  width: 57%;
+  height: 562px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -1px;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    background-image: url("../image/picture/radio-new.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.sale__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+
+}
+
+.title--sale {
+  position: relative;
+  margin-bottom: 48px;
+  color: var(--promo-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    display: block;
+    width: 447px;
+    height: 12px;
+    background-image: url("../image/icon/wool.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.description--sale {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  color: var(--white);
+  row-gap: 13px;
+}
+
+.sale__price {
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 29px;
+  color: var(--white);
+}
+
+.button--sale {
+  outline: none;
+  border: 2px solid var(--promo-color);
+  padding: 24px 11px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--promo-color);
+  background-color: transparent;
+  transition: color 0.3s, background 0.3s, border-color 0.3s;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../image/icon/ya.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &:focus-visible {
+    color: var(--black);
+    background: var(--promo-color-shade);
+  }
+
+  &:hover {
+    color: var(--black);
+    background: var(--promo-color);
+
+    &:hover::before {
+      outline: 1px solid darkblue;
+      fill: brown;
+    }
+  }
+
+  &:active {
+    border-color: var(--promo-color-shade);
+    background: var(--promo-color-shade);
+
+    &:active::before path {
+      fill: var(--promo-color-shade);
+    }
+  }
 }

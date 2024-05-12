@@ -122,10 +122,10 @@ p {
   background-color: var(--primary);
 }
 
-svg {
+/* svg {
   width: inherit;
   height: inherit;
-}
+} */
 
 figure {
   margin: 0;

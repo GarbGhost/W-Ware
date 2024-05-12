@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./image/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="./image/favicon/favicon.ico" rel="icon" sizes="32x32">
   <link href="./image/favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
   <link href="./image/favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
   <link href="./image/favicon/site.webmanifest" rel="manifest">
@@ -253,7 +254,7 @@
             <article class="broadcast-card flex">
               <picture>
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-1.webp">
-                <img src="./image/broadcast/broadcast-card-1.jpg" alt="">
+                <img src="./image/broadcast/broadcast-card-1.jpg" alt>
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">О&nbsp;людях и&nbsp;книгах</h3>
@@ -270,7 +271,7 @@
             <article class="broadcast-card flex">
               <picture>
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-2.webp">
-                <img src="./image/broadcast/broadcast-card-2.jpg" alt="">
+                <img src="./image/broadcast/broadcast-card-2.jpg" alt>
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Графомания&nbsp;td</h3>
@@ -287,7 +288,7 @@
             <article class="broadcast-card flex">
               <picture>
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-3.webp">
-                <img src="./image/broadcast/broadcast-card-3.jpg" alt="">
+                <img src="./image/broadcast/broadcast-card-3.jpg" alt>
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Не&nbsp;Рим, не&nbsp;Троя</h3>
@@ -304,7 +305,7 @@
             <article class="broadcast-card flex">
               <picture>
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-4.webp">
-                <img src="./image/broadcast/broadcast-card-4.jpg" alt="">
+                <img src="./image/broadcast/broadcast-card-4.jpg" alt>
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Эрудит</h3>
@@ -321,7 +322,7 @@
             <article class="broadcast-card flex">
               <picture>
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-5.webp">
-                <img src="./image/broadcast/broadcast-card-5.jpg" alt="">
+                <img src="./image/broadcast/broadcast-card-5.jpg" alt>
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Тонкости эпох</h3>
@@ -338,7 +339,7 @@
             <article class="broadcast-card flex">
               <picture>
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-6.webp">
-                <img src="./image/broadcast/broadcast-card-6.jpg" alt="">
+                <img src="./image/broadcast/broadcast-card-6.jpg" alt>
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Живые мысли</h3>
@@ -567,8 +568,7 @@
     <section class="sale">
       <div class="container sale__container">
         <picture class="sale__image">
-          <source srcset="./image/picture/radio.webp"
-          sizes="(min-width: 1024px) 100px"  >
+          <source srcset="./image/picture/radio.webp" sizes="(min-width: 1024px) 100px">
           <img src="./image/picture/radio.png" alt="изображение старого радио">
         </picture>
         <div class="sale__body">
@@ -593,7 +593,7 @@
     </section>
     <section class="about">
       <div class="container about__container">
-        <div class="about__description">
+        <div class="about__description about__description--bg">
           <h2 class="title title-about">О нас</h2>
           <p class="about__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
           <p class="about__text">
@@ -604,50 +604,69 @@
             Спасибо! Услышимся!:)
           </p>
         </div>
-        <div class="about-cards flex">
-          <div class="about-card">
-            <picture class="about-cards__image">
-              <img src="./image/person/gutenberg.@1x.jpg" alt="фотография Дмитрия Гутенберга">
+
+        <ul class="about-card flex list-reset">
+          <li class="about-card__item">
+            <picture class="about-card__image">
+              <img src="./image/person/gutenberg..jpg" alt="фотография Дмитрия Гутенберга">
             </picture>
-            <div class="about-cards__title">Дмитрий Гутенберг</div>
-            <p class="about-cards__descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
-          </div>
-          <div class="about-card">
-            <picture class="about-cards__image">
-              <img src="./image/person/vasileva@1x.jpg" alt="фотография Анны Васильевой">
+            <div class="about-card__body">
+              <h3 class="headline headline--about">Дмитрий Гутенберг</h3>
+              <p class="description description--about">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+            </div>
+          </li>
+          <li class="about-card__item">
+            <picture class="about-card__image">
+              <img src="./image/person/vasileva.jpg" alt="фотография Анны Васильевой">
             </picture>
-            <div class="about-cards__title">Анна Васильева</div>
-            <p class="about-cards__descr">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
-          </div>
-          <div class="about-card">
-            <picture class="about-cards__image">
-              <img src="./image/person/dmitrievsky@1x.jpg" alt="фотография Пётра Дмитриевского">
+            <div class="about-card__body">
+              <h3 class="headline headline--about">Анна Васильева</h3>
+              <p class="description description--about">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+              </p>
+            </div>
+          </li>
+          <li class="about-card__item">
+            <picture class="about-card__image">
+              <img src="./image/person/dmitrievsky.jpg" alt="фотография Пётра Дмитриевского">
             </picture>
-            <div class="about-cards__title">Пётр Дмитриевский</div>
-            <p class="about-cards__descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
-          </div>
-          <div class="about-card">
-            <picture class="about-cards__image">
-              <img src="./image/person/fleganova@1x.jpg" alt="фотография Татьяны Флегановой">
+            <div class="about-card__body">
+              <h3 class="headline headline--about">Пётр Дмитриевский</h3>
+              <p class="description description--about">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
+            </div>
+          </li>
+          <li class="about-card__item">
+            <picture class="about-card__image">
+              <img src="./image/person/fleganova.jpg" alt="фотография Татьяны Флегановой">
             </picture>
-            <div class="about-cards__title">Татьяна Флеганова</div>
-            <p class="about-cards__descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
+            <div class="about-card__body">
+              <h3 class="headline headline--about">Татьяна Флеганова</h3>
+              <p class="description description--about">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
+            </div>
+          </li>
+        </ul>
+        <form class="form about-form flex" aria-label="форма" action="https://jsonplaceholder.typicode.com/posts"
+          method="post">
+          <div class="form-input flex">
+            <textarea class="form-input__textarea" name="Сообщение" placeholder="Что скажите?"
+              autocomplete="off"></textarea>
+            <div class="form-input__wrapper flex">
+              <input class="form-input form-input--state" type="text" placeholder="Имя" required autocomplete="on" name="Имя">
+              <input class="form-input form-input--state" type="email" placeholder="Email" required autocomplete="on" name="Email">
+            </div>
           </div>
-        </div>
-        <form class="about-form" action="#">
-          <textarea class="about-form__textarea" id name>
-            Что скажете?
-          </textarea>
-          <label>
-            <input class="about-form__name" type="text" placeholder="Имя">
-          </label>
-          <label>
-            <input class="about-form__name" type="email" placeholder="Email">
-          </label>
-          <div class="about-submit">
-            <button class="about-form__btn">Отправить</button>
-            <input class="about-submit__check" type="checkbox">
-            <p class="about-submit__agreement">Согласен на&nbsp;обработку персональных данных</p>
+          <div class="form-submit">
+            <button class="form-submit__btn btn-reset  button" type="submit">Отправить</button>
+
+            <label class="custom-checkbox">
+              <input class="hidden-checkbox" name="Agreement" type="checkbox" required>
+              <span class="checkbox">
+                <svg>
+                  <use xlink:href="./sprite.svg#icon-form"></use>
+                </svg>
+              </span>
+              <span class="checkbox__descr">Согласен на&nbsp;обработку персональных данных</span>
+            </label>
+
           </div>
         </form>
       </div>

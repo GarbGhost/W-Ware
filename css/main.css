@@ -83,6 +83,11 @@
   stroke: var(--primary);
   transition: stroke 0.3s;
 
+  & svg {
+    width: 24px;
+    aspect-ratio: 1/1;
+  }
+
   &:focus-visible svg {
     stroke: var(--primary-light);
   }
@@ -117,6 +122,7 @@
 
 .hero__title {
   margin-bottom: 14px;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 60px;
   line-height: 1;
@@ -141,10 +147,10 @@
 .hero__btn {
   font-weight: 500;
   font-size: 20px;
-  transition: border 0.2s, background 0.3s;
+  transition: outline 0.2s, background 0.3s;
 
   &:focus-visible {
-    border: 2px solid var(--primary-shade);
+    outline: 2px solid var(--primary-shade);
     background: var(--primary-light);
   }
 
@@ -723,20 +729,13 @@
   flex-direction: column;
   padding-bottom: 29px;
   max-width: 58%;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 91%;
-    top: 2px;
-    display: block;
-    width: 94%;
-    height: 90%;
-    background-image: url("../image/icon/spiral-dawn.svg");
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
+.about__container {
+  background: url("../image/icon/spiral.svg"), url("../image/icon/dawn.svg");
+  background-position: 69% 0%, 98% 3%;
+  background-size: 14%, 22%;
+  background-repeat: no-repeat;
 }
 
 .title-about {
@@ -758,3 +757,208 @@
   line-height: 160%;
   color: var(--text-gray);
 }
+
+.about-card {
+  --offsets: 2;
+
+  gap: var(--gap);
+}
+
+.about-card__item {
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+}
+
+.about-card__body {
+  padding: 29px 0;
+}
+
+.headline--about {
+  margin-bottom: 5px;
+  color: var(--white);
+}
+
+.description--about {
+  line-height: 150%;
+}
+
+/** FORM **/
+
+.form {
+  flex-flow: column;
+  width: 83%;
+  gap: var(--gap);
+}
+
+.form-input__textarea {
+  appearance: none;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 30px;
+  padding: 30px;
+  width: 100%;
+  min-height: 150px;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+  background-color: transparent;
+  transition: border 0.4s ease-in-out 0.1s, background 0.4s ease-in-out 0.1s;
+  resize: none;
+
+  &::placeholder {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-gray);
+    transition: opacity 0.3s;
+  }
+
+  &:focus-visible::placeholder {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &:focus-visible {
+    border: 1px solid var(--primary-light);
+    background: var(--light-black);
+  }
+
+  &:hover {
+    border: 1px solid var(--white);
+  }
+
+  &:active {
+    border: 1px solid var(--white);
+  }
+}
+
+.form-input {
+  flex-direction: column;
+  width: 100%;
+  gap: var(--gap);
+}
+
+.form-input__wrapper {
+  --offsets: 1;
+
+  gap: var(--gap);
+}
+
+.form-input--state {
+  appearance: none;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 40px;
+  padding: 10px 30px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  min-height: 70px;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+  background-color: transparent;
+  transition: border 0.4s ease-in-out 0.1s, background 0.4s ease-in-out 0.1s;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-gray);
+  }
+
+  &:focus-visible::placeholder {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &:focus-visible {
+    border: 1px solid var(--primary-light);
+    background: var(--light-black);
+  }
+
+  &:hover {
+    border: 1px solid var(--white);
+  }
+
+  &:active {
+    border: 1px solid var(--white);
+  }
+}
+
+.form-submit {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-top: auto;
+  gap: var(--gap);
+}
+
+.form-submit__btn {
+  padding: 24px 53px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white);
+  transition: outline 0.2s, background 0.3s;
+
+  &:focus-visible {
+    outline: 2px solid var(--primary-shade);
+    background: var(--primary-light);
+  }
+
+  &:hover {
+    background: var(--primary-light);
+  }
+
+  &:active {
+    background: var(--primary-shade);
+  }
+
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+
+
+.hidden-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox {
+  position: relative;
+  border: 1px solid var(--white);
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  transition: outline .3s ease-in-out;
+
+  & svg {
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    width: 10px;
+    height: 8px;
+    stroke: var(--primary-light);
+    stroke-width: 2;
+    opacity: 0;  
+  }
+}
+
+.custom-checkbox .hidden-checkbox:checked ~ .checkbox svg {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.custom-checkbox input:focus-visible ~ .checkbox {
+  outline: 1px solid var(--white);
+  outline-offset: 2px
+}
+
+.checkbox__descr {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--white);
+}
+

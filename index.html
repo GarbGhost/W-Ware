@@ -15,9 +15,9 @@
   <title>W-Wave Radio</title>
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/base.css" rel="stylesheet">
-  <link href="./css/main.css" rel="stylesheet">
-  <link href="./css/media.css" rel="stylesheet">
   <link href="./css/fonts.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +66,6 @@
           </p>
           <a class="hero__btn button btn-reset" href="#">Слушать эфир</a>
         </div>
-        <!-- <div class="hero__image"> -->
         <picture class="hero__image">
           <source srcset="./image/picture/microphone-350.webp" media="(min-width: 1140px)" type="image/webp">
           <source srcset="./image/picture/microphone-350.jpg" media="(min-width: 1140px)">
@@ -74,7 +73,6 @@
           <source srcset="./image/picture/microphone-256.jpg" media="(min-width: 940px)">
           <img src="./image/picture/microphone-350.jpg" alt="Изображение Микрофона">
         </picture>
-        <!-- </div> -->
       </div>
     </section>
     <section class="podcast">
@@ -587,7 +585,11 @@
             </p>
           </div>
           <span class="sale__price">2&nbsp;800&nbsp;₽</span>
-          <a class="button button--sale" href="#">Купить на&nbsp;Яндекс.Маркет</a>
+          <a class="button button--sale" href="#">Купить на&nbsp;Яндекс.Маркет
+            <svg>
+              <use xlink:href="./sprite.svg#icon-yandex"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -650,8 +652,10 @@
             <textarea class="form-input__textarea" name="Сообщение" placeholder="Что скажите?"
               autocomplete="off"></textarea>
             <div class="form-input__wrapper flex">
-              <input class="form-input form-input--state" type="text" placeholder="Имя" required autocomplete="on" name="Имя">
-              <input class="form-input form-input--state" type="email" placeholder="Email" required autocomplete="on" name="Email">
+              <input class="form-input form-input--state" type="text" placeholder="Имя" required autocomplete="on"
+                name="Имя">
+              <input class="form-input form-input--state" type="email" placeholder="Email" required autocomplete="on"
+                name="Email">
             </div>
           </div>
           <div class="form-submit">
@@ -675,62 +679,55 @@
   <footer class="footer">
     <div class="container footer__container flex">
       <div class="footer-media">
-        <div class="footer__logo logo">
+        <a href="#" class="logo footer__logo ">
+          <img src="./image/icon/logo-footer.svg" alt="Логотип Радио W-Wave" loading="lazy">
+        </a>
+        <div class="footer-media__social">
           <svg>
-            <use xlink:href="./sprite.svg#logo"></use>
+            <use xlink:href="./sprite.svg#youtube"></use>
           </svg>
-          <div class="footer-media__social">
-            <svg>
-              <use xlink:href="./sprite.svg#youtube"></use>
-            </svg>
-
-
-            <svg>
-              <use xlink:href="./sprite.svg#odnoclass"></use>
-            </svg>
-
-            <svg>
-              <use xlink:href="./sprite.svg#vk"></use>
-            </svg>
-
-
-          </div>
-          <div class="footer-content">
-            <ul class="footer-content__list list-reset flex">
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Подкасты</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Передачи</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Гости</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Плейлисты</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Сетка</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">О нас</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Новости</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Блоги</a>
-              </li>
-              <li class="footer-content__item">
-                <a class="footer-content__link" href="#">Топы</a>
-              </li>
-            </ul>
-          </div>
           <svg>
-            <use xlink:href="./sprite.svg#radio-wave"></use>
+            <use xlink:href="./sprite.svg#odnoclass"></use>
+          </svg>
+          <svg>
+            <use xlink:href="./sprite.svg#vk"></use>
           </svg>
         </div>
       </div>
+      <div class="footer-content">
+        <ul class="footer-content__list list-reset flex">
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Подкасты</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Передачи</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Гости</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Плейлисты</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Сетка</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">О нас</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Новости</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Блоги</a>
+          </li>
+          <li class="footer-content__item">
+            <a class="footer-content__link" href="#">Топы</a>
+          </li>
+        </ul>
+      </div>
+      <svg>
+        <use xlink:href="./sprite.svg#radio-wave"></use>
+      </svg>
     </div>
   </footer>
 

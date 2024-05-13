@@ -122,11 +122,34 @@ p {
   background-color: var(--primary);
 }
 
-/* svg {
-  width: inherit;
-  height: inherit;
-} */
-
 figure {
   margin: 0;
+}
+
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: perspective(1px) translateZ(0);
+  transition-property: outline, box-shadow, transform;
+  transition-duration: 0.3s;
+
+  &:focus-visible {
+    outline: 1px solid var(--primary);
+    outline-offset: 5px;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+  }
 }

@@ -11,35 +11,10 @@
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.header__logo {
   margin-right: auto;
-  outline: none;
   width: 160px;
   height: 25px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transform: perspective(1px) translateZ(0);
-  transition-property: outline, box-shadow, transform;
-  transition-duration: 0.3s;
-
-  &:focus-visible {
-    outline: 1px solid var(--primary);
-    outline-offset: 5px;
-  }
-
-  &:hover {
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-  }
-
-  &:active {
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.2);
-  }
 }
 
 .header__nav {
@@ -669,6 +644,7 @@
 }
 
 .button--sale {
+  flex-direction: row-reverse;
   outline: none;
   border: 2px solid var(--promo-color);
   padding: 24px 11px;
@@ -680,14 +656,14 @@
   transition: color 0.3s, background 0.3s, border-color 0.3s;
   gap: 8px;
 
-  &::before {
-    content: "";
+  & svg {
+    border-radius: 50%;
     width: 20px;
-    height: 20px;
-    background-image: url("../image/icon/ya.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    fill: #121723;
+    background-color: #f0d288;
+    transition: color .3s, background .3s;
+    aspect-ratio: 1/1;
+
   }
 
   &:focus-visible {
@@ -699,18 +675,20 @@
     color: var(--black);
     background: var(--promo-color);
 
-    &:hover::before {
-      outline: 1px solid darkblue;
-      fill: brown;
+    & svg {
+      fill: #f0d288;
+      background-color: #121723;
     }
   }
 
   &:active {
     border-color: var(--promo-color-shade);
+    color: var(--black);
     background: var(--promo-color-shade);
 
-    &:active::before path {
-      fill: var(--promo-color-shade);
+    & svg {
+      fill: #f0d288;
+      background-color: #121723;
     }
   }
 }
@@ -719,7 +697,7 @@
 
 .about {
   padding-top: 94px;
-  padding-bottom: 100px;
+  padding-bottom: 95px;
   background: var(--black);
 }
 
@@ -814,7 +792,7 @@
 
   &:focus-visible::placeholder {
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
 
   &:focus-visible {
@@ -865,7 +843,7 @@
 
   &:focus-visible::placeholder {
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
 
   &:focus-visible {
@@ -909,7 +887,6 @@
   &:active {
     background: var(--primary-shade);
   }
-
 }
 
 .custom-checkbox {
@@ -918,8 +895,6 @@
   cursor: pointer;
   gap: 8px;
 }
-
-
 
 .hidden-checkbox {
   appearance: none;
@@ -932,7 +907,7 @@
   width: 14px;
   height: 14px;
   background: transparent;
-  transition: outline .3s ease-in-out;
+  transition: outline 0.3s ease-in-out;
 
   & svg {
     position: absolute;
@@ -942,18 +917,18 @@
     height: 8px;
     stroke: var(--primary-light);
     stroke-width: 2;
-    opacity: 0;  
+    opacity: 0;
   }
 }
 
 .custom-checkbox .hidden-checkbox:checked ~ .checkbox svg {
   opacity: 1;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .custom-checkbox input:focus-visible ~ .checkbox {
   outline: 1px solid var(--white);
-  outline-offset: 2px
+  outline-offset: 2px;
 }
 
 .checkbox__descr {
@@ -962,3 +937,15 @@
   color: var(--white);
 }
 
+/** FOOTER **/
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background: var(--light-black);
+}
+
+.footer__logo {
+  width: 160px;
+  height: 25px;
+}

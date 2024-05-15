@@ -648,20 +648,20 @@
         </ul>
         <form class="form about-form flex" aria-label="форма" action="https://jsonplaceholder.typicode.com/posts"
           method="post">
-          <div class="form-input flex">
-            <textarea class="form-input__textarea" name="Сообщение" placeholder="Что скажите?"
+          <div class="form-column flex">
+            <textarea class="form-column__textarea" name="Сообщение" placeholder="Что скажите?"
               autocomplete="off"></textarea>
 
-            <div class="form-input__wrapper flex">
-              <label class="form-input__label">
-                <input class="form-input form-input--state" type="text" placeholder="Имя" required autocomplete="on"
+            <div class="form-row flex">
+              <label class="form-row__label">
+                <input class="form-row__input" type="text" placeholder="Имя" required autocomplete="on"
                   name="Имя">
-                <span class="form-input__span">Ошибка</span>
+                <span class="form-row__error">Ошибка</span>
               </label>
-              <label class="form-input__label">
-                <input class="form-input form-input--state" type="email" placeholder="Email" required autocomplete="on"
+              <label class="form-row__label">
+                <input class="form-row__input" type="email" placeholder="Email" required autocomplete="on"
                   name="Email">
-                <span class="form-input__span">Ошибка</span>
+                <span class="form-row__error">Ошибка</span>
               </label>
             </div>
           </div>

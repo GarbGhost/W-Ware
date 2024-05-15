@@ -651,11 +651,18 @@
           <div class="form-input flex">
             <textarea class="form-input__textarea" name="Сообщение" placeholder="Что скажите?"
               autocomplete="off"></textarea>
+
             <div class="form-input__wrapper flex">
-              <input class="form-input form-input--state" type="text" placeholder="Имя" required autocomplete="on"
-                name="Имя">
-              <input class="form-input form-input--state" type="email" placeholder="Email" required autocomplete="on"
-                name="Email">
+              <label class="form-input__label">
+                <input class="form-input form-input--state" type="text" placeholder="Имя" required autocomplete="on"
+                  name="Имя">
+                <span class="form-input__span">Ошибка</span>
+              </label>
+              <label class="form-input__label">
+                <input class="form-input form-input--state" type="email" placeholder="Email" required autocomplete="on"
+                  name="Email">
+                <span class="form-input__span">Ошибка</span>
+              </label>
             </div>
           </div>
           <div class="form-submit">
@@ -685,7 +692,8 @@
             <img src="./image/icon/logo-footer.svg" alt="Логотип Радио W-Wave" loading="lazy">
           </a>
           <div class="footer-media__social social flex">
-            <a class="social__icon" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank" aria-label="сайт yotube">
+            <a class="social__icon" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank"
+              aria-label="сайт yotube">
               <svg>
                 <use xlink:href="./sprite.svg#youtube"></use>
               </svg>
@@ -736,10 +744,13 @@
           </ul>
         </div>
       </div>
-      <svg>
-        <use xlink:href="./sprite.svg#radio-wave"></use>
-      </svg>
     </div>
+    <svg class="footer-bottom__wave">
+      <use xlink:href="./sprite.svg#radio-wave"></use>
+    </svg>
+    <span class="footer-bottom__registered" aria-label="Товарный знак" aria-hidden="true">
+      W-WAVE <sup class="reg">&reg;</sup> 2023
+    </span>
   </footer>
 
 </body>

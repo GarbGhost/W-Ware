@@ -839,7 +839,7 @@
 .form-row__input {
   appearance: none;
   outline: none;
-  /* border: 1px solid var(--white); */
+  border: 1px solid var(--white);
   border-radius: 40px;
   padding: 10px 30px;
   width: 100%;
@@ -875,7 +875,6 @@
   }
 }
 
-
 .form-row__error {
   position: absolute;
   left: 31px;
@@ -887,22 +886,21 @@
   transition: all 0.3s;
 }
 
-
-.form-row__label:invalid {
-  border: 2px solid red;
+.form-row__input:invalid:not(:placeholder-shown) {
+  border-color:  #d52b1e;
   
-  & .form-row__error {
+  & ~ .form-row__error {
     opacity: 1;
   }
 }
 
+.form-row__input:valid {
+  border-color: var(--white);
+}
 
 
-/* .form-row__input:hover::placeholder {
-  font-size: 20px;
-  opacity: 1;
-  transition: all 0.3s;
-} */
+
+
 
 .form-submit {
   display: flex;

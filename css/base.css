@@ -155,3 +155,20 @@ figure {
     transform: scale(1.2);
   }
 }
+
+input,
+label,
+select,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	border: none;
+
+}

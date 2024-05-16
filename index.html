@@ -654,13 +654,13 @@
 
             <div class="form-row flex">
               <label class="form-row__label">
-                <input class="form-row__input" type="text" placeholder="Имя" required autocomplete="on"
-                  name="Имя">
+                <input class="form-row__input" type="text" placeholder="Имя"  autocomplete="on"
+                  name="Имя" pattern="[A-Za-zА-Яа-я\s\-]+" required>
                 <span class="form-row__error">Ошибка</span>
               </label>
               <label class="form-row__label">
-                <input class="form-row__input" type="email" placeholder="Email" required autocomplete="on"
-                  name="Email">
+                <input class="form-row__input" type="email" placeholder="Email"  autocomplete="on"
+                  name="Email" required>
                 <span class="form-row__error">Ошибка</span>
               </label>
             </div>

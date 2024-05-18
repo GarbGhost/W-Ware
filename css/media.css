@@ -181,8 +181,13 @@
 
 
 @media (width <= 768px) {
-  .hero__container {
-    /* width: 100%; */
+
+  .header__nav {
+    justify-content: flex-start;
+  }
+  
+  .nav__link {
+    font-size: 16px;
   }
 
   .hero__image {

@@ -166,35 +166,58 @@
 
   .about-card__body {
     padding: 29px 0 0;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
 
-.form {
-  width: 100%;
+@media (width <= 856px) {
+  .nav__list {
+    gap: 20px 54px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
 }
 
-}
-
-
-
-
-
-
-
-@media (width <= 768px) {
-
+@media (width <= 570px) {
   .header__nav {
     justify-content: flex-start;
   }
-  
-  .nav__link {
-    font-size: 16px;
+
+  .hero__container {
+    padding-top: 60px;
   }
 
   .hero__image {
     display: none;
   }
 
+  .podcast__list {
+    --offsets: 0;
+  }
+
   .broadcast__list {
     --offsets: 1;
+  }
+
+  .broadcast__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .broadcast-body {
+    order: 2;
+  }
+
+  .broadcast__list {
+    order: 1;
+  }
+
+  .button--broadcast-color {
+    order: 3;
   }
 }

@@ -1,17 +1,186 @@
-@media (max-width: 1070px) {
+@media (width <= 1070px) {
   .header__nav {
-    margin-right: 0;
-    order: 1;
-    flex-basis: 100%;
-    padding: 20px 0 20px;
+    margin-right: 64px;
   }
 
-  .nav__link {
-    padding: 0;
+  .about__description::before {
+    content: "";
+    display: none;
+  }
+
+  .about__description::after {
+    content: "";
+    left: 106%;
+    top: 13%;
   }
 }
 
-@media (max-width: 939px) {
+@media (width <= 960px) {
+  .header {
+    padding-bottom: 14px;
+  }
+
+  .header__logo {
+    width: 112px;
+    height: 14px;
+  }
+
+  .header__nav {
+    position: relative;
+    flex-basis: 100%;
+    justify-content: center;
+    order: 1;
+    margin-right: 0;
+    padding: 49px 0 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 28px;
+      border-bottom: 1px solid var(--light-color);
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom: 1px solid var(--light-color);
+      width: 100%;
+    }
+  }
+
+  .nav__list {
+    gap: 20px 105px;
+  }
+
+  .hero {
+    padding-top: 15px;
+    padding-bottom: 89px;
+  }
+
+  .hero__container {
+    padding-top: 49px;
+  }
+
+  .hero__content {
+    justify-content: flex-end;
+    max-width: 539px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .broadcast {
+    padding-bottom: 94px;
+  }
+
+  .broadcast-body {
+    width: 32%;
+  }
+
+  .broadcast__list {
+    --offsets: 1;
+
+    width: 68%;
+  }
+
+  .guests {
+    padding-bottom: 94px;
+  }
+
+  .guests__text {
+    width: 65%;
+  }
+
+  .guest-card__image {
+    width: 60%;
+  }
+
+  .playlists__container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .playlist-body {
+    width: 100%;
+  }
+
+  .play-list {
+    --offsets: 2;
+
+    width: 100%;
+    row-gap: 28px;
+  }
+
+  .play-list__item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .play-list__content {
+    padding: 4px 8px;
+  }
+
+  .play-list__image {
+    max-width: 112px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .sale {
+    padding-bottom: 92px;
+  }
+
+  .sale__image {
+    position: relative;
+    margin-bottom: 39px;
+    width: 249%;
+
+    &::before {
+      left: 0;
+      top: -7px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .about__description {
+    width: 65%;
+  }
+
+  .about-card {
+    --offsets: 1;
+
+    padding-bottom: 31px;
+  }
+
+  .about-card__body {
+    padding: 29px 0 0;
+}
+
+.form {
+  width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+@media (width <= 768px) {
   .hero__container {
     /* width: 100%; */
   }

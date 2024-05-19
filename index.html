@@ -353,6 +353,15 @@
             </article>
           </li>
         </ul>
+
+        <div class="broadcast-hidden " aria-hidden="true">
+          <a class="button broadcast-hidden__btn" href="#!">Архив</a>
+          <p class="broadcast-hidden__descr">
+            В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
+          </p>
+        </div>
+
+
       </div>
     </section>
     <section class="guests">
@@ -365,11 +374,13 @@
         </p>
 
         <article class="guest-card flex">
+
           <picture class="guest-card__image">
-            <source srcset="./image/person/martynova@1x.avif 1x" type="image/avif" sizes="(min-width: 1150px) 432px">
-            <source srcset="./image/person/martynova@2x.avif 2x" type="image/avif">
-            <img src="./image/person/martynova@1x.jpg" alt>
+            <source srcset="./image/guest/martynova.avif 1x" type="image/avif">
+
+            <img src="./image/guest/martynova.jpg" alt="Ольга Мартынова">
           </picture>
+
           <div class="guest-card__body flex">
             <h3 class="headline headline--guest">Ольга Мартынова</h3>
             <p class="description description--guest">
@@ -383,9 +394,8 @@
         </article>
         <article class="guest-card flex">
           <picture class="guest-card__image">
-            <source srcset="./image/person/grushyn@1x.avif 1x" type="image/avif" sizes="(min-width: 1150px) 432px">
-            <source srcset="./image/person/grushyn@2x.avif 2x" type="image/avif">
-            <img src="./image/person/grushyn@1x.jpg" alt>
+            <source srcset="./image/guest/grushyn.avif" type="image/avif">
+            <img src="./image/guest/grushyn.jpg" alt="Денис Гришин">
           </picture>
           <div class="guest-card__body flex">
             <h3 class="headline headline--guest">Денис Гришин</h3>
@@ -399,10 +409,8 @@
         </article>
         <article class="guest-card flex">
           <picture class="guest-card__image">
-            <source srcset="./image/person/olga-martynova@1x.avif 1x" type="image/avif"
-              sizes="(min-width: 1150px) 432px">
-            <source srcset="./image/person/olga-martynova@2x.avif 2x" type="image/avif">
-            <img src="./image/person/olga-martynova@1x.jpg" alt>
+            <source srcset="./image/guest/olga-martynova.avif" type="image/avif">
+            <img src="./image/guest/olga-martynova.jpg" alt="Ольга Мартынова">
           </picture>
           <div class="guest-card__body flex">
             <h3 class="headline headline--guest">Ольга Мартынова</h3>
@@ -616,10 +624,12 @@
         <ul class="about-card flex list-reset">
           <li class="about-card__item">
             <picture class="about-card__image">
-              <source type="image/avif" srcset="./image/about/gutenberg-255.avif" media="(min-width: 960px)" >
-              <source type="image/avif" srcset="./image/about/gutenberg-255.jpg" media="(min-width: 960px)" >
-              <source type="image/avif" srcset="./image/about/gutenberg-397.avif" media="(min-width: 768px)" >
-              <source type="image/avif" srcset="./image/about/gutenberg-397.jpg" media="(min-width: 768px)" >
+              <source type="image/avif" srcset="./image/about/gutenberg-255.avif" media="(min-width: 960px)">
+              <source srcset="./image/about/gutenberg-255.jpg" media="(min-width: 960px)">
+              <source type="image/avif" srcset="./image/about/gutenberg-397.avif" media="(min-width: 768px)">
+              <source srcset="./image/about/gutenberg-397.jpg" media="(min-width: 768px)">
+              <source type="image/avif" srcset="./image/about/gutenberg-255*255.avif" media="(min-width: 570px)">
+              <source srcset="./image/about/gutenberg-255*255.jpg" media="(min-width: 570px)">
               <img src="./image/about/gutenberg-255.jpg" alt="фотография Дмитрия Гутенберга">
             </picture>
             <div class="about-card__body">
@@ -630,10 +640,12 @@
           <li class="about-card__item">
             <picture class="about-card__image">
               <picture class="about-card__image">
-                <source type="image/avif" srcset="./image/about/vasileva-255.avif" media="(min-width: 960px)" >
-                <source type="image/avif" srcset="./image/about/vasileva-255.jpg" media="(min-width: 960px)" >
-                <source type="image/avif" srcset="./image/about/vasileva-397.avif" media="(min-width: 768px)" >
-                <source type="image/avif" srcset="./image/about/vasileva-397.jpg" media="(min-width: 768px)" >
+                <source type="image/avif" srcset="./image/about/vasileva-255.avif" media="(min-width: 960px)">
+                <source srcset="./image/about/vasileva-255.jpg" media="(min-width: 960px)">
+                <source type="image/avif" srcset="./image/about/vasileva-397.avif" media="(min-width: 768px)">
+                <source srcset="./image/about/vasileva-397.jpg" media="(min-width: 768px)">
+                <source type="image/avif" srcset="./image/about/vasileva-255*255.avif" media="(min-width: 570px)">
+                <source srcset="./image/about/vasileva-255*255.jpg" media="(min-width: 570px)">
                 <img src="./image/about/vasileva-255.jpg" alt="фотография Анны Васильевой">
               </picture>
             </picture>
@@ -645,10 +657,12 @@
           </li>
           <li class="about-card__item">
             <picture class="about-card__image">
-              <source type="image/avif" srcset="./image/about/dmitrievsky-255.avif" media="(min-width: 960px)" >
-              <source type="image/avif" srcset="./image/about/dmitrievsky-255.jpg" media="(min-width: 960px)" >
-              <source type="image/avif" srcset="./image/about/dmitrievsky-397.avif" media="(min-width: 768px)" >
-              <source type="image/avif" srcset="./image/about/dmitrievsky-397.jpg" media="(min-width: 768px)" >
+              <source type="image/avif" srcset="./image/about/dmitrievsky-255.avif" media="(min-width: 960px)">
+              <source srcset="./image/about/dmitrievsky-255.jpg" media="(min-width: 960px)">
+              <source type="image/avif" srcset="./image/about/dmitrievsky-397.avif" media="(min-width: 768px)">
+              <source srcset="./image/about/dmitrievsky-397.jpg" media="(min-width: 768px)">
+              <source type="image/avif" srcset="./image/about/dmitrievsky-255*255.avif" media="(min-width: 570px)">
+              <source srcset="./image/about/dmitrievsky-255*255.jpg" media="(min-width: 570px)">
               <img src="./image/about/dmitrievsky-255.jpg" alt="фотография Пётра Дмитриевского">
             </picture>
             <div class="about-card__body">
@@ -658,11 +672,13 @@
           </li>
           <li class="about-card__item">
             <picture class="about-card__image">
-              <source type="image/avif" srcset="./image/about/fleganova-255.avif" media="(min-width: 960px)" >
-              <source type="image/avif" srcset="./image/about/fleganova-255.jpg" media="(min-width: 960px)" >
-              <source type="image/avif" srcset="./image/about/fleganova-397.avif" media="(min-width: 768px)" >
-              <source type="image/avif" srcset="./image/about/fleganova-397.jpg" media="(min-width: 768px)" >
-              <img src="./image/about/vasileva-255.jpg" alt="фотография Татьяны Флегановой">
+              <source type="image/avif" srcset="./image/about/fleganova-255.avif" media="(min-width: 960px)">
+              <source srcset="./image/about/fleganova-255.jpg" media="(min-width: 960px)">
+              <source type="image/avif" srcset="./image/about/fleganova-397.avif" media="(min-width: 768px)">
+              <source srcset="./image/about/fleganova-397.jpg" media="(min-width: 768px)">
+              <source type="image/avif" srcset="./image/about/fleganova-255*255.avif" media="(min-width: 570px)">
+              <source srcset="./image/about/fleganova-255*255.jpg" media="(min-width: 570px)">
+              <img src="./image/about/fleganova-255.jpg" alt="фотография Татьяны Флегановой">
             </picture>
             <div class="about-card__body">
               <h3 class="headline headline--about">Татьяна Флеганова</h3>
@@ -715,18 +731,18 @@
             <img src="./image/icon/logo-footer.svg" alt="Логотип Радио W-Wave" loading="lazy">
           </a>
           <div class="footer-media__social social flex">
-            <a class="social__icon" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank"
-              aria-label="сайт yotube">
+            <a class="social__icon social__icon--youtube" href="https://www.youtube.com/?app=desktop&hl=ru" target="_blank"
+              aria-label="сайт youtube">
               <svg>
                 <use xlink:href="./sprite.svg#youtube"></use>
               </svg>
             </a>
-            <a class="social__icon" href="https://ok.ru/" target="_blank" aria-label="сайт одноклассники">
+            <a class="social__icon social__icon--ok" href="https://ok.ru/" target="_blank" aria-label="сайт одноклассники">
               <svg>
                 <use xlink:href="./sprite.svg#ok"></use>
               </svg>
             </a>
-            <a class="social__icon" href="https://vk.com/" target="_blank" aria-label="сайт вконтакте">
+            <a class="social__icon social__icon--vk" href="https://vk.com/" target="_blank" aria-label="сайт вконтакте">
               <svg>
                 <use xlink:href="./sprite.svg#vk"></use>
               </svg>

@@ -944,7 +944,6 @@
   padding: 10px 30px;
   width: 100%;
   min-height: 70px;
-  /* height: 100%; */
   font-weight: 400;
   font-size: 20px;
   color: var(--white);
@@ -1166,6 +1165,7 @@
   margin: -5px;
   outline: none;
   padding: 5%;
+  white-space: nowrap;
   transition: color 0.3s;
 }
 

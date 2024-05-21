@@ -558,7 +558,7 @@
 
   .footer-nav {
     position: relative;
-    padding: 30px 0;
+    padding: 30px 0 23px;
     width: 100%;
 
     &::before {
@@ -598,11 +598,16 @@
     padding: 0;
   }
 
+  .footer-bottom__registered {
+    padding-top: 10px;
+  }
+
 }
 
 @media (max-width: 320px) {
   .header {
-    padding-bottom: 10px;
+    padding-top: 11px;
+    padding-bottom: 25px;
 
     &::before {
       content: "";
@@ -1021,20 +1026,12 @@
     padding-top: 51px;
   }
 
-  /* .footer-body {
-    gap: 84px;
-  }
+  .footer__container {
+    padding-bottom: 19px;
+}
 
-  .footer-nav__list {
-    columns: 2;
-    column-gap: 130px;
-  }
-
-  .footer-nav__item {
+  .footer-bottom__registered {
     font-size: 12px;
+line-height: 1.03;
   }
-
-  .footer-media {
-    padding: 0;
-  } */
 }

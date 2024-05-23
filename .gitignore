@@ -6,11 +6,10 @@
 .vscode
 .stylelintignore
 .stylelintrc.json
+.history
 package-lock.json
 package.json
 node_modules
-# Icon must end with two \r
-Icon
 
 
 # Thumbnails

@@ -16,7 +16,7 @@
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/base.css" rel="stylesheet">
   <link href="./css/fonts.css" rel="stylesheet">
-  <link href="./css/main.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <link href="./css/media.css" rel="stylesheet">
 </head>
 
@@ -29,23 +29,23 @@
       <nav class="header__nav nav">
         <ul class="nav__list list-reset flex">
           <li class="nav__item flex">
-            <a class="nav__link" href="#!">Подкасты</a>
+            <a class="nav__link" href="#podcast" >Подкасты</a>
           </li>
           <li class="nav__item flex">
-            <a class="nav__link" href="#!">Передачи</a>
+            <a class="nav__link" href="#broadcast">Передачи</a>
           </li>
           <li class="nav__item flex">
-            <a class="nav__link" href="#!">Гости</a>
+            <a class="nav__link" href="#guests">Гости</a>
           </li>
           <li class="nav__item flex">
-            <a class="nav__link" href="#!">Плейлисты</a>
+            <a class="nav__link" href="#playlists">Плейлисты</a>
           </li>
           <li class="nav__item flex">
-            <a class="nav__link" href="#!">О нас</a>
+            <a class="nav__link" href="#about">О нас</a>
           </li>
         </ul>
       </nav>
-      <button class="header__search btn-reset">
+      <button class="header__search btn-reset" aria-label="Поиск">
         <svg>
           <use xlink:href="./sprite.svg#search"></use>
         </svg>
@@ -67,15 +67,15 @@
           <a class="hero__btn button btn-reset" href="#!">Слушать эфир</a>
         </div>
         <picture class="hero__image">
-          <source srcset="./image/picture/microphone-350.webp" media="(min-width: 1070px)" type="image/webp">
-          <source srcset="./image/picture/microphone-350.jpg" media="(min-width: 1070px)">
-          <source srcset="./image/picture/microphone-256.webp" media="(min-width: 768px)" type="image/webp">
-          <source srcset="./image/picture/microphone-256.jpg" media="(min-width: 768px)">
+          <source srcset="./image/picture/microphone-350.webp" media="(min-width: 1090px)" type="image/webp">
+          <source srcset="./image/picture/microphone-350.jpg" media="(min-width: 1090px)">
+          <source srcset="./image/picture/microphone-256.webp" media="(min-width: 885px)" type="image/webp">
+          <source srcset="./image/picture/microphone-256.jpg" media="(min-width: 885px)">
           <img src="./image/picture/microphone-350.jpg" alt="Изображение Микрофона">
         </picture>
       </div>
     </section>
-    <section class="podcast">
+    <section class="podcast" id="podcast">
       <div class="container">
         <h2 class="title podcast__title">Подкасты</h2>
         <ul class="podcast__list list-reset flex">
@@ -84,9 +84,9 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/europa.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/europa-mobile.webp" media="(max-width: 320px)" type="image/webp">
-                    <source srcset="./image/podcast/europa-mobile.avif" media="(max-width: 320px)" type="image/avif">
+                    <source srcset="./image/podcast/europa.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/europa-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                    <source srcset="./image/podcast/europa-mobile.avif" media="(max-width: 316px)" type="image/avif">
                     <img src="./image/podcast/europa.jpg" alt="Изображение города на реке">
                     <figcaption class="podcast-wrapper__caption">14 июня</figcaption>
                   </picture>
@@ -104,12 +104,11 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/about-music.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/about-music-mobile.webp" media="(max-width: 320px)"
+                    <source srcset="./image/podcast/about-music.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/about-music-mobile.webp" media="(max-width: 316px)"
                       type="image/webp">
-                    <source srcset="./image/podcast/about-music-mobile.avif" media="(max-width: 320px)"
+                    <source srcset="./image/podcast/about-music-mobile.avif" media="(max-width: 316px)"
                       type="image/avif">
-
                     <img src="./image/podcast/about-music.jpg" alt="Изображение музыканта со скрипкой">
                   </picture>
                   <figcaption class="podcast-wrapper__caption">11 июня</figcaption>
@@ -127,9 +126,9 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/people.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/people-mobile.webp" media="(max-width: 320px)" type="image/webp">
-                    <source srcset="./image/podcast/people-mobile.avif" media="(max-width: 320px)" type="image/avif">
+                    <source srcset="./image/podcast/people.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/people-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                    <source srcset="./image/podcast/people-mobile.avif" media="(max-width: 316px)" type="image/avif">
                     <img src="./image/podcast/people.jpg" alt="Изображение музыканта со скрипкой">
                   </picture>
                   <figcaption class="podcast-wrapper__caption">8 июня</figcaption>
@@ -147,9 +146,9 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/africa.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/africa-mobile.webp" media="(max-width: 320px)" type="image/webp">
-                    <source srcset="./image/podcast/africa-mobile.avif" media="(max-width: 320px)" type="image/avif">
+                    <source srcset="./image/podcast/africa.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/africa-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                    <source srcset="./image/podcast/africa-mobile.avif" media="(max-width: 316px)" type="image/avif">
                     <img src="./image/podcast/africa.jpg" alt="Изображение африканской женщины с корзиной">
                   </picture>
                   <figcaption class="podcast-wrapper__caption">5 июня</figcaption>
@@ -167,9 +166,9 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/about.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/about-mobile.webp" media="(max-width: 320px)" type="image/webp">
-                    <source srcset="./image/podcast/about-mobile.avif" media="(max-width: 320px)" type="image/avif">
+                    <source srcset="./image/podcast/about.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/about-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                    <source srcset="./image/podcast/about-mobile.avif" media="(max-width: 316px)" type="image/avif">
                     <img src="./image/podcast/about.jpg" alt="Изображение статуи мудреца">
                   </picture>
                   <figcaption class="podcast-wrapper__caption">2 июня</figcaption>
@@ -187,9 +186,9 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/circle.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/circle-mobile.webp" media="(max-width: 320px)" type="image/webp">
-                    <source srcset="./image/podcast/circle-mobile.avif" media="(max-width: 320px)" type="image/avif">
+                    <source srcset="./image/podcast/circle.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/circle-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                    <source srcset="./image/podcast/circle-mobile.avif" media="(max-width: 316px)" type="image/avif">
                     <img src="./image/podcast/circle.jpg" alt="Изображение цветного круга">
                   </picture>
                   <figcaption class="podcast-wrapper__caption">28 мая</figcaption>
@@ -207,10 +206,10 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/sound-source.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/sound-source-mobile.webp" media="(max-width: 320px)"
+                    <source srcset="./image/podcast/sound-source.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/sound-source-mobile.webp" media="(max-width: 316px)"
                       type="image/webp">
-                    <source srcset="./image/podcast/sound-source-mobile.avif" media="(max-width: 320px)"
+                    <source srcset="./image/podcast/sound-source-mobile.avif" media="(max-width: 316px)"
                       type="image/avif">
                     <img src="./image/podcast/sound-source.jpg" alt="Изображение музыканта со скрипкой">
                   </picture>
@@ -229,9 +228,9 @@
               <a class="podcast-card__link flex" href="#!">
                 <figure class="podcast-wrapper">
                   <picture class="podcast-wrapper__image">
-                    <source srcset="./image/podcast/rules.webp" media="(min-width: 321px)" type="image/webp">
-                    <source srcset="./image/podcast/rules-mobile.webp" media="(max-width: 320px)" type="image/webp">
-                    <source srcset="./image/podcast/rules-mobile.avif" media="(max-width: 320px)" type="image/avif">
+                    <source srcset="./image/podcast/rules.webp" media="(min-width: 317px)" type="image/webp">
+                    <source srcset="./image/podcast/rules-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                    <source srcset="./image/podcast/rules-mobile.avif" media="(max-width: 316px)" type="image/avif">
                     <img src="./image/podcast/rules.jpg" alt="Изображение мужчины и женщины 19 века">
                   </picture>
                   <figcaption class="podcast-wrapper__caption">18 мая</figcaption>
@@ -247,7 +246,7 @@
         </ul>
       </div>
     </section>
-    <section class="broadcast">
+    <section class="broadcast" id="broadcast">
       <div class="container broadcast__container flex">
         <div class="broadcast-body flex">
           <h2 class="title broadcast-body__title">Передачи</h2>
@@ -263,7 +262,7 @@
             <article class="broadcast-card flex">
               <picture class="broadcast-card__image">
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-1.webp">
-                <img src="./image/broadcast/broadcast-card-1.jpg">
+                <img src="./image/broadcast/broadcast-card-1.jpg" alt="">
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">О&nbsp;людях и&nbsp;книгах</h3>
@@ -280,7 +279,7 @@
             <article class="broadcast-card flex">
               <picture class="broadcast-card__image">
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-2.webp">
-                <img src="./image/broadcast/broadcast-card-2.jpg">
+                <img src="./image/broadcast/broadcast-card-2.jpg" alt="">
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Графомания&nbsp;td</h3>
@@ -297,7 +296,7 @@
             <article class="broadcast-card flex">
               <picture class="broadcast-card__image">
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-3.webp">
-                <img src="./image/broadcast/broadcast-card-3.jpg">
+                <img src="./image/broadcast/broadcast-card-3.jpg" alt="">
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Не&nbsp;Рим, не&nbsp;Троя</h3>
@@ -314,7 +313,7 @@
             <article class="broadcast-card flex">
               <picture class="broadcast-card__image">
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-4.webp">
-                <img src="./image/broadcast/broadcast-card-4.jpg">
+                <img src="./image/broadcast/broadcast-card-4.jpg" alt="">
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Эрудит</h3>
@@ -331,7 +330,7 @@
             <article class="broadcast-card flex">
               <picture class="broadcast-card__image">
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-5.webp">
-                <img src="./image/broadcast/broadcast-card-5.jpg">
+                <img src="./image/broadcast/broadcast-card-5.jpg" alt="">
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Тонкости эпох</h3>
@@ -348,7 +347,7 @@
             <article class="broadcast-card flex">
               <picture class="broadcast-card__image">
                 <source type="image/webp" srcset="./image/broadcast/broadcast-card-6.webp">
-                <img src="./image/broadcast/broadcast-card-6.jpg">
+                <img src="./image/broadcast/broadcast-card-6.jpg" alt="">
               </picture>
               <div class="broadcast-card__content flex">
                 <h3 class="headline headline--broadcast">Живые мысли</h3>
@@ -370,7 +369,7 @@
         </div>
       </div>
     </section>
-    <section class="guests">
+    <section class="guests" id="guests">
       <div class="container guests__container">
         <h2 class="guests__title title">Гости</h2>
         <span class="guests__descr">У&nbsp;нас бывают:</span>
@@ -378,15 +377,11 @@
           Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи
           и&nbsp;много других интересных гостей!
         </p>
-
         <article class="guest-card flex">
-
           <picture class="guest-card__image">
             <source srcset="./image/guest/martynova.avif 1x" type="image/avif">
-
             <img src="./image/guest/martynova.jpg" alt="Ольга Мартынова">
           </picture>
-
           <div class="guest-card__body flex">
             <h3 class="headline headline--guest">Ольга Мартынова</h3>
             <p class="description description--guest">
@@ -431,7 +426,7 @@
         </article>
       </div>
     </section>
-    <section class="playlists">
+    <section class="playlists" id="playlists">
       <div class="container playlists__container flex">
         <div class="playlist-body">
           <h2 class="title playlist-body__title">Плейлисты</h2>
@@ -443,7 +438,6 @@
           <span class="playlist-body__age-rating">18+</span>
         </div>
         <ul class="play-list flex list-reset">
-
           <li class="play-list__item">
             <picture class="play-list__image play-list__image--russia">
               <source srcset="./image/playlist/ploho.avif" type="image/avif">
@@ -457,8 +451,7 @@
           </li>
           <li class="play-list__item">
             <picture class="play-list__image play-list__image--russia">
-              <source type="image/avif" srcset="./image/playlist/molchat-doma.avif" sizes="(min-width: 1140px) 80vw">
-
+              <source type="image/avif" srcset="./image/playlist/molchat-doma.avif">
               <img src="./image/playlist/molchat-doma.jpg" alt="постер группы Molchat Doma">
             </picture>
             <div class="play-list__content">
@@ -466,7 +459,6 @@
               <p class="description description--playlist">Все песни</p>
             </div>
           </li>
-
           <li class="play-list__item">
             <picture class="play-list__image play-list__image--russia">
               <source type="image/avif" srcset="./image/playlist/motorama.avif">
@@ -477,7 +469,6 @@
               <p class="description description--playlist">Все синглы</p>
             </div>
           </li>
-
           <li class="play-list__item">
             <picture class="play-list__image
             play-list__image--russia">
@@ -583,11 +574,8 @@
     <section class="sale">
       <div class="container sale__container">
         <picture class="sale__image">
-
           <source srcset="./image/picture/radio.webp" type="image/webp">
-
           <img src="./image/picture/radio.png" alt="изображение старого радио" width="640" height="562">
-
         </picture>
         <div class="sale__body">
           <h2 class=" title title--sale">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
@@ -605,7 +593,7 @@
             </p>
           </div>
           <span class="sale__price">2&nbsp;800&nbsp;₽</span>
-          <a class="button button--sale" href="#!">Купить на&nbsp;Яндекс.Маркет
+          <a class="button button--sale" href="https://market.yandex.ru/">Купить на&nbsp;Яндекс.Маркет
             <svg>
               <use xlink:href="./sprite.svg#icon-yandex"></use>
             </svg>
@@ -613,7 +601,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about__container">
         <div class="about__description">
           <h2 class="title title-about">О нас</h2>
@@ -626,7 +614,6 @@
             Спасибо! Услышимся!:)
           </p>
         </div>
-
         <ul class="about-card flex list-reset">
           <li class="about-card__item">
             <picture class="about-card__image">
@@ -636,8 +623,8 @@
               <source srcset="./image/about/gutenberg-397.jpg" media="(min-width: 853px)">
               <source type="image/avif" srcset="./image/about/gutenberg-255*255.avif" media="(min-width: 570px)">
               <source srcset="./image/about/gutenberg-255*255.jpg" media="(min-width: 570px)">
-              <source type="image/avif" srcset="./image/about/gutenberg-mobile.avif" media="(min-width: 320px)">
-              <source srcset="./image/about/gutenberg-mobile.jpg" media="(min-width: 320px)">
+              <source type="image/avif" srcset="./image/about/gutenberg-mobile.avif" media="(min-width: 286px)">
+              <source srcset="./image/about/gutenberg-mobile.jpg" media="(min-width: 286px)">
               <img src="./image/about/gutenberg-255.jpg" alt="фотография Дмитрия Гутенберга">
             </picture>
             <div class="about-card__body">
@@ -654,8 +641,8 @@
                 <source srcset="./image/about/vasileva-397.jpg" media="(min-width: 853px)">
                 <source type="image/avif" srcset="./image/about/vasileva-255*255.avif" media="(min-width: 570px)">
                 <source srcset="./image/about/vasileva-255*255.jpg" media="(min-width: 570px)">
-                <source type="image/avif" srcset="./image/about/vasileva-mobile.avif" media="(min-width: 320px)">
-                <source srcset="./image/about/vasileva-mobile.jpg" media="(min-width: 320px)">
+                <source type="image/avif" srcset="./image/about/vasileva-mobile.avif" media="(min-width: 286px)">
+                <source srcset="./image/about/vasileva-mobile.jpg" media="(min-width: 286px)">
                 <img src="./image/about/vasileva-255.jpg" alt="фотография Анны Васильевой">
               </picture>
             </picture>
@@ -673,8 +660,8 @@
               <source srcset="./image/about/dmitrievsky-397.jpg" media="(min-width: 853px)">
               <source type="image/avif" srcset="./image/about/dmitrievsky-255*255.avif" media="(min-width: 570px)">
               <source srcset="./image/about/dmitrievsky-255*255.jpg" media="(min-width: 570px)">
-              <source type="image/avif" srcset="./image/about/dmitrievsky-mobile.avif" media="(min-width: 320px)">
-              <source srcset="./image/about/dmitrievsky-mobile.jpg" media="(min-width: 320px)">
+              <source type="image/avif" srcset="./image/about/dmitrievsky-mobile.avif" media="(min-width: 286px)">
+              <source srcset="./image/about/dmitrievsky-mobile.jpg" media="(min-width: 286px)">
               <img src="./image/about/dmitrievsky-255.jpg" alt="фотография Пётра Дмитриевского">
             </picture>
             <div class="about-card__body">
@@ -690,8 +677,8 @@
               <source srcset="./image/about/fleganova-397.jpg" media="(min-width: 853px)">
               <source type="image/avif" srcset="./image/about/fleganova-255*255.avif" media="(min-width: 570px)">
               <source srcset="./image/about/fleganova-255*255.jpg" media="(min-width: 570px)">
-              <source type="image/avif" srcset="./image/about/fleganova-mobile.avif" media="(min-width: 320px)">
-              <source srcset="./image/about/fleganova-mobile.jpg" media="(min-width: 320px)">
+              <source type="image/avif" srcset="./image/about/fleganova-mobile.avif" media="(min-width: 286px)">
+              <source srcset="./image/about/fleganova-mobile.jpg" media="(min-width: 286px)">
               <img src="./image/about/fleganova-255.jpg" alt="фотография Татьяны Флегановой">
             </picture>
             <div class="about-card__body">
@@ -705,7 +692,6 @@
           <div class="form-column flex">
             <textarea class="form-column__textarea" name="Сообщение" placeholder="Что скажите?"
               autocomplete="off"></textarea>
-
             <div class="form-row flex">
               <label class="form-row__label">
                 <input class="form-row__input" type="text" placeholder="Имя" autocomplete="on" name="Имя"
@@ -720,7 +706,6 @@
           </div>
           <div class="form-submit">
             <button class="form-submit__btn btn-reset  button" type="submit">Отправить</button>
-
             <label class="custom-checkbox">
               <input class="hidden-checkbox" name="Agreement" type="checkbox" required>
               <span class="checkbox">
@@ -728,9 +713,8 @@
                   <use xlink:href="./sprite.svg#icon-form"></use>
                 </svg>
               </span>
-              <span class="checkbox__descr">Согласен на&nbsp;обработку персональных данных</span>
+              <span class="custom-checkbox__descr">Согласен на&nbsp;обработку персональных данных</span>
             </label>
-
           </div>
         </form>
       </div>
@@ -739,7 +723,6 @@
   <footer class="footer">
     <div class="container footer__container flex">
       <div class="footer-body flex">
-
         <div class="footer-media flex">
           <a class="logo footer__logo " href="#!">
             <img src="./image/icon/logo-footer.svg" alt="Логотип Радио W-Wave" loading="lazy">
@@ -763,9 +746,7 @@
               </svg>
             </a>
           </div>
-
         </div>
-
         <div class="footer-nav">
           <ul class="footer-nav__list list-reset ">
             <li class="footer-nav__item">
@@ -799,10 +780,7 @@
         </div>
       </div>
     </div>
-    <!-- <svg class="footer-bottom__wave">
-      <use xlink:href="./sprite.svg#footer-wave"></use>
-    </svg> -->
-    <span class="footer-bottom__registered" aria-hidden="true" aria-label="Товарный знак">
+    <span class="footer-registered" aria-hidden="true" aria-label="Товарный знак">
       W-WAVE <sup class="reg">&reg;</sup> 2023
     </span>
   </footer>

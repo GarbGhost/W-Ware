@@ -27,7 +27,7 @@ img {
 
 /** Local config */
 body {
-  min-width: 320px;
+  min-width: 286px;
   min-height: 100%;
   font-family: var(--font-family), var(--second-family), var(--third-family), sans-serif;
   font-size: 1em;
@@ -36,8 +36,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1140px;
+  padding: 0 30px;
+  max-width: 1170px;
 }
 
 .list-reset {

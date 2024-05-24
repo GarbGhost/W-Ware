@@ -1,4 +1,4 @@
-@media (max-width: 1090px) {
+@media (width <= 1090px) {
   .header {
     position: relative;
     padding-bottom: 14px;
@@ -60,7 +60,7 @@
       display: block;
       width: 255px;
       height: 255px;
-      background: url(../image/icon/dawn.svg);
+      background: url("../image/icon/dawn.svg");
       background-repeat: no-repeat;
     }
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 885px) {
+@media (width <= 885px) {
   .header {
     padding-top: 28px;
     padding-bottom: 11px;
@@ -210,7 +210,7 @@
       display: block;
       width: 255px;
       height: 255px;
-      background: url(../image/icon/dawn.svg);
+      background: url("../image/icon/dawn.svg");
       background-repeat: no-repeat;
     }
   }
@@ -253,7 +253,7 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (width <= 840px) {
   .nav__list {
     gap: 20px 34px;
   }
@@ -336,14 +336,6 @@
     background: var(--primary-shade);
   }
 
-  @media (any-hover: hover) {
-    .broadcast-hidden__btn:hover {
-      border-color: currentcolor;
-      color: var(--white);
-      background: var(--primary);
-    }
-  }
-
   .broadcast-hidden__descr {
     font-size: 16px;
     line-height: 150%;
@@ -388,9 +380,17 @@
   .footer-nav__list {
     columns: 2;
   }
+
+  @media (any-hover: hover) {
+    .broadcast-hidden__btn:hover {
+      border-color: currentcolor;
+      color: var(--white);
+      background: var(--primary);
+    }
+  }
 }
 
-@media (max-width: 599px) {
+@media (width <= 599px) {
   .header {
     &::before {
       content: "";
@@ -528,7 +528,7 @@
       display: block;
       width: 100%;
       height: clamp(10vh, 20vw, 30vh);
-      background: url(../image/icon/spiral-big.svg);
+      background: url("../image/icon/spiral-big.svg");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -540,7 +540,7 @@
       display: block;
       width: 21%;
       height: clamp(10vh, 20vw, 30vh);
-      background: url(../image/icon/dawn-small.svg);
+      background: url("../image/icon/dawn-small.svg");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -616,13 +616,12 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (width <= 580px) {
   .header__nav {
     justify-content: flex-start;
+    overflow: auto hidden;
     margin: 0;
     padding: 49px 0 15px;
-    overflow-x: auto;
-    overflow-y: hidden;
     white-space: nowrap;
   }
 
@@ -662,7 +661,7 @@
   }
 }
 
-@media (max-width: 455px) {
+@media (width <= 455px) {
   .hero__container {
     padding-top: 30px;
   }
@@ -730,7 +729,7 @@
   }
 }
 
-@media (max-width: 316px) {
+@media (width <= 316px) {
   .header {
     padding-top: 11px;
     padding-bottom: 25px;
@@ -760,13 +759,10 @@
   }
 
   .header__nav {
-    padding: 31px 0 15px;
-
     justify-content: flex-start;
+    overflow: auto hidden;
     margin: 0;
-
-    overflow-x: auto;
-    overflow-y: hidden;
+    padding: 31px 0 15px;
     white-space: nowrap;
   }
 
@@ -890,18 +886,7 @@
     color: var(--primary);
 
     & svg {
-      stroke: currentColor;
-    }
-  }
-
-  @media (any-hover: hover) {
-    .broadcast-card__btn:hover {
-      color: var(--black);
-
-      .broadcast-card__btn:hover,
-      svg {
-        stroke: currentcolor;
-      }
+      stroke: currentcolor;
     }
   }
 
@@ -933,7 +918,7 @@
       top: -1px;
       width: 31%;
       height: 100%;
-      background-image: url(../image/broadcast/mic.png);
+      background-image: url("../image/broadcast/mic.png");
       background-position: center;
       background-size: 77px 104px;
       background-repeat: no-repeat;
@@ -1197,6 +1182,17 @@
 
     &::before {
       bottom: 21px;
+    }
+  }
+
+  @media (any-hover: hover) {
+    .broadcast-card__btn:hover {
+      color: var(--black);
+
+      .broadcast-card__btn:hover,
+      svg {
+        stroke: currentcolor;
+      }
     }
   }
 }

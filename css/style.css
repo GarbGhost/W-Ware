@@ -239,15 +239,18 @@
   &:focus-visible {
     outline: 1px solid var(--primary);
   }
-
-  &:hover .podcast-wrapper__image {
+}
+  
+@media (any-hover: hover) {
+  .podcast-card__link:hover .podcast-wrapper__image {
     opacity: 0.5;
   }
 
-  &:active .podcast-wrapper__image {
+}
+
+  .podcast-card__link:active .podcast-wrapper__image {
     opacity: 0.3;
   }
-}
 
 .podcast-wrapper {
   position: relative;

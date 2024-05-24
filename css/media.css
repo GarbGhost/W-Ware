@@ -28,6 +28,11 @@
     order: 1;
     margin: 0;
     padding: 49px 0 20px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-box-pack: center;
+    -ms-flex-order: 1;
+    -ms-flex-pack: center;
+    -ms-flex-preferred-size: 100%;
   }
 
   .nav__list {
@@ -139,7 +144,10 @@
   }
 
   .playlists__container {
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
     gap: 23px;
   }
 
@@ -160,8 +168,13 @@
   }
 
   .play-list__item {
+    -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -ms-flex-align: center;
   }
 
   .play-list__content {
@@ -280,10 +293,17 @@
   }
 
   .broadcast__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
     gap: 0;
   }
 
@@ -293,11 +313,18 @@
 
   .broadcast-hidden {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 97px;
     max-width: 358px;
+    -webkit-box-align: start;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: start;
 
     &::before {
       content: "";
@@ -321,6 +348,8 @@
     padding: 11px 54px;
     color: var(--black);
     background-color: transparent;
+    -webkit-transition: color 0.3s, border-color 0.3s, background 0.3s;
+    -o-transition: color 0.3s, border-color 0.3s, background 0.3s;
     transition: color 0.3s, border-color 0.3s, background 0.3s;
 
     &:focus-visible {
@@ -347,6 +376,8 @@
 
   .guest-card {
     align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
   }
 
   .play-list {
@@ -366,7 +397,10 @@
   .form-row {
     --offsets: 0;
 
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
   }
 
   .form-row__label {
@@ -378,6 +412,8 @@
   }
 
   .footer-nav__list {
+    -webkit-columns: 2;
+    -moz-columns: 2;
     columns: 2;
   }
 
@@ -445,9 +481,14 @@
   }
 
   .guest-card {
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 51px;
+    -webkit-box-align: start;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: start;
   }
 
   .guest-card__body {
@@ -473,6 +514,7 @@
   .play-list__image {
     flex-shrink: 0;
     width: 45%;
+    -ms-flex-negative: 0;
 
     &::before {
       left: 0;
@@ -486,7 +528,10 @@
   }
 
   .sale__container {
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
     gap: 50px;
   }
 
@@ -559,19 +604,28 @@
   }
 
   .footer-body {
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: center;
   }
 
   .footer-media {
     align-items: center;
     padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     gap: 18px;
   }
 
   .footer-media__social {
     align-items: center;
     width: 94%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     gap: 25px;
   }
 
@@ -596,8 +650,14 @@
   }
 
   .footer-nav__list {
+    -webkit-columns: 3;
+    -moz-columns: 3;
     columns: 3;
+    -webkit-column-width: 64px;
+    -moz-column-width: 64px;
     column-width: 64px;
+    -webkit-column-gap: 173px;
+    -moz-column-gap: 173px;
     column-gap: 173px;
   }
 
@@ -623,6 +683,8 @@
     margin: 0;
     padding: 49px 0 15px;
     white-space: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
   }
 
   .hero__title {
@@ -643,8 +705,13 @@
   }
 
   .play-list__item {
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: start;
   }
 
   .play-list__image {
@@ -657,6 +724,8 @@
   }
 
   .footer-nav__list {
+    -webkit-column-gap: 121px;
+    -moz-column-gap: 121px;
     column-gap: 121px;
   }
 }
@@ -725,6 +794,8 @@
   }
 
   .footer-nav__list {
+    -webkit-columns: 2;
+    -moz-columns: 2;
     columns: 2;
   }
 }
@@ -764,6 +835,8 @@
     margin: 0;
     padding: 31px 0 15px;
     white-space: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
   }
 
   .nav__list {
@@ -804,8 +877,13 @@
   }
 
   .podcast-card__link {
+    -ms-flex-direction: column;
     flex-direction: column;
     align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -ms-flex-align: start;
   }
 
   .podcast-wrapper__image {
@@ -908,8 +986,11 @@
   }
 
   .broadcast-hidden {
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     padding-left: 68px;
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
 
     &::before {
       content: "";
@@ -1105,6 +1186,22 @@
     padding: 14px 23px;
     font-size: 16px;
 
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+
+    &::-moz-placeholder {
+      font-size: 16px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 16px;
+    }
+
+    &::-ms-input-placeholder {
+      font-size: 16px;
+    }
+
     &::placeholder {
       font-size: 16px;
     }
@@ -1118,6 +1215,22 @@
     padding: 10px 24px;
     min-height: 50px;
     font-size: 16px;
+
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+
+    &::-moz-placeholder {
+      font-size: 16px;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 16px;
+    }
+
+    &::-ms-input-placeholder {
+      font-size: 16px;
+    }
 
     &::placeholder {
       font-size: 16px;
@@ -1161,6 +1274,8 @@
   }
 
   .footer-nav__list {
+    -webkit-column-gap: 33px;
+    -moz-column-gap: 33px;
     column-gap: 33px;
   }
 

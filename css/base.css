@@ -29,7 +29,8 @@ img {
 body {
   min-width: 286px;
   min-height: 100%;
-  font-family: var(--font-family), var(--second-family), var(--third-family), sans-serif;
+  font-family: var(--font-family), var(--second-family), var(--third-family),
+    sans-serif;
   font-size: 1em;
   color: #000;
 }
@@ -73,8 +74,6 @@ body {
   --second-family: "Muller-Trial";
   --third-family: "Open Sans";
   --gap: 30px;
-
-
 }
 
 .flex {
@@ -113,6 +112,8 @@ p {
 }
 
 .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   align-items: center;
   border-radius: 40px;
@@ -120,6 +121,8 @@ p {
   white-space: nowrap;
   color: var(--white);
   background-color: var(--primary);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
 figure {
@@ -127,16 +130,32 @@ figure {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   outline: none;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: outline, -webkit-box-shadow, -webkit-transform;
+  -o-transition-property: outline, box-shadow, transform;
+  transition-property: outline, -webkit-box-shadow, -webkit-transform;
   transition-property: outline, box-shadow, transform;
+  transition-property: outline, box-shadow, transform, -webkit-box-shadow,
+    -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-negative: 0;
+  -ms-flex-pack: center;
 
   &:focus-visible {
     outline: 1px solid var(--primary);
@@ -144,18 +163,25 @@ figure {
   }
 
   &:hover {
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
 
   &:active {
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
 }
 
 .visually-hidden {
   position: absolute;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   overflow: hidden;
   margin: -1px;

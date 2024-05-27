@@ -10,7 +10,7 @@
 @font-face {
   src: url('../fonts/Muller-RegularItalic.woff2') format('woff2'),
       url('../fonts/Muller-RegularItalic.woff') format('woff');
-  font-family: Muller;
+  font-family: Muller-Italic;
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   src: url('../fonts/Muller-Medium.woff2') format('woff2'),
       url('../fonts/Muller-Medium.woff') format('woff');
-  font-family: Muller-Trial;
+  font-family: Muller;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -35,9 +35,9 @@
 }
 
 @font-face {
-  src: url('../fonts/Muller-Trial-LightItalic.woff2') format('woff2'),
+  src: url('../fonts/Muller-LightItalic.woff2') format('woff2'),
       url('../fonts/Muller-LightItalic.woff') format('woff');
-  font-family: Muller;
+  font-family: Muller-Italic;
   font-weight: 300;
   font-style: italic;
   font-display: swap;

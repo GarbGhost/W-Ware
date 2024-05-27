@@ -27,7 +27,7 @@ img {
 
 /** Local config */
 body {
-  min-width: 286px;
+  min-width: 316px;
   min-height: 100%;
   font-family: var(--font-family), sans-serif;
   font-size: 1em;

@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 
 
 .header {
@@ -1365,7 +1366,7 @@
 
 .footer-body {
   justify-content: space-between;
-  margin-bottom: 73px;
+  margin-bottom: 78px;
   width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1375,9 +1376,10 @@
   -ms-flex-direction: column;
   flex-direction: column;
   padding-right: 30px;
+  max-width: 200px;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
-  gap: 18px;
+  gap: 16px;
 }
 
 .footer__logo {
@@ -1385,15 +1387,19 @@
   height: 25px;
 }
 
-.footer-media__social {
-  width: 71%;
+.footer-media__list {
+  flex-wrap: wrap;
   gap: 22px;
 }
 
-.social__icon {
-  outline: none;
+.footer-media__item {
   width: 23px;
-  height: 21px;
+  aspect-ratio: 1 / 1;
+}
+
+.footer-media__social {
+  display: flex;
+  outline: none;
 
   & svg {
     fill: var(--shade-gray);
@@ -1409,12 +1415,12 @@
 }
 
 @media (any-hover: hover) {
-  .social__icon:hover svg {
+  .footer-media__social:hover svg {
     fill: var(--primary);
   }
 }
 
-.social__icon:active svg {
+.footer-media__social:active svg {
   fill: var(--primary-shade);
 }
 

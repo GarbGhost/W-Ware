@@ -207,22 +207,22 @@
             </a>
           </li>
           <li class="podcast__item">
-              <a class="podcast__link" href="#!">
+            <a class="podcast__link" href="#!">
 
-                  <picture class="podcast__image">
-                    <source srcset="./image/podcast/rules.webp" media="(min-width: 317px)" type="image/webp">
-                    <source srcset="./image/podcast/rules-mobile.webp" media="(max-width: 316px)" type="image/webp">
-                    <source srcset="./image/podcast/rules-mobile.avif" media="(max-width: 316px)" type="image/avif">
-                    <img src="./image/podcast/rules.jpg" alt="Изображение мужчины и женщины 19 века">
-                  </picture>
-                 <span class="podcast-wrapper__caption">18 мая</span>
+              <picture class="podcast__image">
+                <source srcset="./image/podcast/rules.webp" media="(min-width: 317px)" type="image/webp">
+                <source srcset="./image/podcast/rules-mobile.webp" media="(max-width: 316px)" type="image/webp">
+                <source srcset="./image/podcast/rules-mobile.avif" media="(max-width: 316px)" type="image/avif">
+                <img src="./image/podcast/rules.jpg" alt="Изображение мужчины и женщины 19 века">
+              </picture>
+              <span class="podcast-wrapper__caption">18 мая</span>
 
-                <div class="podcast-body">
-                  <time class="podcast-body__time" aria-label="Время начала" datetime="6:55">6:55</time>
-                  <h3 class="headline headline--podcast">Правила этикета</h3>
-                  <span class="description description--podcast">Татьяна Флеганова</span>
-                </div>
-              </a>
+              <div class="podcast-body">
+                <time class="podcast-body__time" aria-label="Время начала" datetime="6:55">6:55</time>
+                <h3 class="headline headline--podcast">Правила этикета</h3>
+                <span class="description description--podcast">Татьяна Флеганова</span>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -358,53 +358,65 @@
           Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи
           и&nbsp;много других интересных гостей!
         </p>
-        <article class="guest-card flex">
-          <picture class="guest-card__image">
-            <source srcset="./image/guest/martynova.avif 1x" type="image/avif">
-            <img src="./image/guest/martynova.jpg" alt="Ольга Мартынова">
-          </picture>
-          <div class="guest-card__body flex">
-            <h3 class="headline headline--guest">Ольга Мартынова</h3>
-            <p class="description description--guest">
-              Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты
-              &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;,
-              коим
-              является с&nbsp;2016&nbsp;года.
-            </p>
-            <a class="button guest-card__btn" href="#!">Эфиры с гостем</a>
-          </div>
-        </article>
-        <article class="guest-card flex">
-          <picture class="guest-card__image">
-            <source srcset="./image/guest/grushyn.avif" type="image/avif">
-            <img src="./image/guest/grushyn.jpg" alt="Денис Гришин">
-          </picture>
-          <div class="guest-card__body flex">
-            <h3 class="headline headline--guest">Денис Гришин</h3>
-            <p class="description description--guest">
-              Однозначно, элементы политического процесса являются только методом политического участия и&nbsp;смешаны
-              с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
-              их&nbsp;статус бесполезности.
-            </p>
-            <a class="button guest-card__btn" href="#!">Эфиры с гостем</a>
-          </div>
-        </article>
-        <article class="guest-card flex">
-          <picture class="guest-card__image">
-            <source srcset="./image/guest/olga-martynova.avif" type="image/avif">
-            <img src="./image/guest/olga-martynova.jpg" alt="Ольга Мартынова">
-          </picture>
-          <div class="guest-card__body flex">
-            <h3 class="headline headline--guest">Ольга Мартынова</h3>
-            <p class="description description--guest">
-              С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность
-              дальнейших
-              направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных
-              источников.
-            </p>
-            <a class="button guest-card__btn" href="#!">Эфиры с гостем</a>
-          </div>
-        </article>
+        <ul class="guests__list list-reset">
+          <li class="guests__item">
+            <article class="guest-card flex">
+              <picture class="guest-card__image">
+                <source srcset="./image/guest/martynova.avif 1x" type="image/avif">
+                <img src="./image/guest/martynova.jpg" alt="Ольга Мартынова">
+              </picture>
+              <div class="guest-card__body flex">
+                <h3 class="headline headline--guest">Ольга Мартынова</h3>
+                <p class="description description--guest">
+                  Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик
+                  газеты
+                  &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея
+                  &laquo;Гараж&raquo;,
+                  коим
+                  является с&nbsp;2016&nbsp;года.
+                </p>
+                <a class="button guest-card__btn" href="#!">Эфиры с гостем</a>
+              </div>
+            </article>
+          </li>
+          <li class="guests__item">
+            <article class="guest-card flex">
+              <picture class="guest-card__image">
+                <source srcset="./image/guest/grushyn.avif" type="image/avif">
+                <img src="./image/guest/grushyn.jpg" alt="Денис Гришин">
+              </picture>
+              <div class="guest-card__body flex">
+                <h3 class="headline headline--guest">Денис Гришин</h3>
+                <p class="description description--guest">
+                  Однозначно, элементы политического процесса являются только методом политического участия
+                  и&nbsp;смешаны
+                  с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
+                  их&nbsp;статус бесполезности.
+                </p>
+                <a class="button guest-card__btn" href="#!">Эфиры с гостем</a>
+              </div>
+            </article>
+          </li>
+          <li class="guests__item">
+            <article class="guest-card flex">
+              <picture class="guest-card__image">
+                <source srcset="./image/guest/olga-martynova.avif" type="image/avif">
+                <img src="./image/guest/olga-martynova.jpg" alt="Ольга Мартынова">
+              </picture>
+              <div class="guest-card__body flex">
+                <h3 class="headline headline--guest">Ольга Мартынова</h3>
+                <p class="description description--guest">
+                  С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность
+                  дальнейших
+                  направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные
+                  с&nbsp;зарубежных
+                  источников.
+                </p>
+                <a class="button guest-card__btn" href="#!">Эфиры с гостем</a>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="playlists" id="playlists">

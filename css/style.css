@@ -841,7 +841,7 @@
   background-color: transparent;
   -webkit-transition: color 0.3s, background 0.3s, border-color 0.3s;
   -o-transition: color 0.3s, background 0.3s, border-color 0.3s;
-  transition: color 0.3s, background 0.3s, border-color 0.3s;
+  transition: color 0.3s, background 0.3s, border-color 0.3s, stroke 0.3s, fill 0.3s;
   -webkit-box-direction: reverse;
   -webkit-box-orient: horizontal;
   gap: 8px;
@@ -851,7 +851,8 @@
   border-radius: 50%;
   width: 20px;
   fill: #121723;
-  background-color: #f0d288;
+  stroke: #121723;
+  background: #f0d288;
   -webkit-transition: color 0.3s, background 0.3s;
   -o-transition: color 0.3s, background 0.3s;
   transition: color 0.3s, background 0.3s;
@@ -871,6 +872,7 @@
 
   .button--sale:hover svg {
     fill: #f0d288;
+    stroke: #f0d288;
     background-color: #121723;
   }
 }
@@ -1399,24 +1401,28 @@
 
 .footer-media__social svg {
   fill: var(--shade-gray);
+  stroke: var(--shade-gray);
   -webkit-transition: fill 0.3s ease;
   -o-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s ease, stroke 0.3s ease;
   aspect-ratio: 1/1;
 }
 
 .footer-media__social:focus-visible svg {
   fill: var(--primary-light);
+  stroke: var(--primary-light);
 }
 
 @media (any-hover: hover) {
   .footer-media__social:hover svg {
     fill: var(--primary);
+    stroke: var(--primary);
   }
 }
 
 .footer-media__social:active svg {
   fill: var(--primary-shade);
+  stroke: var(--primary-shade);
 }
 
 .footer-nav {

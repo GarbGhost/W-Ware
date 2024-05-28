@@ -936,10 +936,10 @@
 
   .broadcast-card__btn:active {
     color: var(--primary-shade);
+  }
 
-    .broadcast-card__btn:active svg {
-      stroke: currentcolor;
-    }
+  .broadcast-card__btn:active svg {
+    stroke: currentcolor;
   }
 
   .broadcast-card__image {

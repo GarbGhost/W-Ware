@@ -216,6 +216,16 @@
   background: var(--white);
 }
 
+.podcast__picture {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 112px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .podcast__link {
   position: relative;
   display: flex;
@@ -239,16 +249,6 @@
 
 .podcast__link:active .podcast__picture {
   opacity: 0.3;
-}
-
-.podcast__picture {
-  display: flex;
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 112px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .podcast__caption {
@@ -901,7 +901,7 @@
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   width: 58%;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -955,16 +955,15 @@
 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
   gap: var(--gap);
 }
 
 .about-card__item {
+  display: flex;
+  flex-direction: column;
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
-}
-
-.about-card__body {
-  padding: 29px 0 10px;
+  gap: 29px;
 }
 
 .headline--about {

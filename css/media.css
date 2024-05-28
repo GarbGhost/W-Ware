@@ -209,6 +209,7 @@
   }
 
   .about__description {
+    margin-bottom: 29px;
     width: 65%;
 
     &::after {
@@ -228,10 +229,6 @@
     --offsets: 1;
 
     margin-bottom: 31px;
-  }
-
-  .about-card__body {
-    padding: 29px 0 0;
   }
 
   .form {
@@ -585,11 +582,7 @@
   }
 
   .about-card {
-    margin-bottom: 29px;
-  }
-
-  .about-card__body {
-    padding: 31px 0 0;
+    margin-bottom: 32px;
   }
 
   .footer {
@@ -764,10 +757,6 @@
     &::after {
       top: 80%;
     }
-  }
-
-  .about-card__body {
-    padding: 13px 5px 1px 0;
   }
 
   .headline--about {
@@ -1158,7 +1147,11 @@
   }
 
   .about-card {
-    margin-bottom: 12px;
+    margin-bottom: 29px;
+  }
+
+  .about-card__item {
+    gap: 14px;
   }
 
   .about__subtitle {

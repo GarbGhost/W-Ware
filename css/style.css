@@ -1,3 +1,4 @@
+/* stylelint-disable value-keyword-case */
 /* stylelint-disable no-descending-specificity */
 .header {
   padding-top: 31px;
@@ -88,7 +89,9 @@
 }
 
 .header__search svg {
-  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  stroke: var(--primary);
 }
 
 .header__search:focus-visible svg {
@@ -449,16 +452,12 @@
 .broadcast-card__btn svg {
   width: 26px;
   height: 12px;
-  stroke: #121723;
+  stroke: currentColor;
 }
 
 .broadcast-card__btn:focus-visible {
   color: var(--white);
   background: var(--primary-light);
-}
-
-.broadcast-card__btn:focus-visible svg {
-  stroke: currentcolor;
 }
 
 @media (any-hover: hover) {
@@ -467,13 +466,19 @@
   }
 }
 
+.broadcast-card__btn:active {
+  color: var(--primary-shade);
+}
+
+.broadcast-card__btn:focus-visible svg {
+  stroke: currentColor;
+}
+
+
 .broadcast-card__btn:hover svg {
   stroke: currentcolor;
 }
 
-.broadcast-card__btn:active {
-  color: var(--primary-shade);
-}
 
 .broadcast-card__btn:active svg {
   stroke: currentcolor;
@@ -841,7 +846,7 @@
   background-color: transparent;
   -webkit-transition: color 0.3s, background 0.3s, border-color 0.3s;
   -o-transition: color 0.3s, background 0.3s, border-color 0.3s;
-  transition: color 0.3s, background 0.3s, border-color 0.3s, stroke 0.3s, fill 0.3s;
+  transition: color 0.3s, background 0.3s, border-color 0.3s, fill 0.3s;
   -webkit-box-direction: reverse;
   -webkit-box-orient: horizontal;
   gap: 8px;
@@ -850,9 +855,8 @@
 .button--sale svg {
   border-radius: 50%;
   width: 20px;
-  fill: #121723;
-  stroke: #121723;
-  background: #f0d288;
+  fill: var(--black);
+  background: var(--promo-color);
   -webkit-transition: color 0.3s, background 0.3s;
   -o-transition: color 0.3s, background 0.3s;
   transition: color 0.3s, background 0.3s;
@@ -870,22 +874,21 @@
     background: var(--promo-color);
   }
 
+  .button--sale:active {
+    border-color: var(--promo-color-shade);
+    color: var(--black);
+    background: var(--promo-color-shade);
+  }
+
   .button--sale:hover svg {
-    fill: #f0d288;
-    stroke: #f0d288;
-    background-color: #121723;
+    fill: var(--promo-color);
+    background-color: var(--black);
   }
 }
 
-.button--sale:active {
-  border-color: var(--promo-color-shade);
-  color: var(--black);
-  background: var(--promo-color-shade);
-}
-
 .button--sale:active svg {
-  fill: #f0d288;
-  background-color: #121723;
+  fill: var(--promo-color);
+  background-color: var(--black);
 }
 
 /** ABOUT **/
@@ -1400,29 +1403,26 @@
 }
 
 .footer-media__social svg {
+  width: 23px;
+  height: 23px;
   fill: var(--shade-gray);
-  stroke: var(--shade-gray);
   -webkit-transition: fill 0.3s ease;
   -o-transition: fill 0.3s ease;
-  transition: fill 0.3s ease, stroke 0.3s ease;
-  aspect-ratio: 1/1;
+  transition: fill 0.3s ease;
 }
 
 .footer-media__social:focus-visible svg {
   fill: var(--primary-light);
-  stroke: var(--primary-light);
 }
 
 @media (any-hover: hover) {
   .footer-media__social:hover svg {
     fill: var(--primary);
-    stroke: var(--primary);
   }
 }
 
 .footer-media__social:active svg {
   fill: var(--primary-shade);
-  stroke: var(--primary-shade);
 }
 
 .footer-nav {
@@ -1534,8 +1534,7 @@
   height: 12px;
 }
 
-.footer-bottom__wave,
-svg {
+.footer-bottom__wave svg {
   fill: none;
   stroke: #f5f6f7;
   opacity: 0.6;

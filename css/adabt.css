@@ -1,3 +1,4 @@
+/* stylelint-disable order/order */
 @media (max-width: 1100px) {
   .container {
     padding: 0 100px;
@@ -26,8 +27,7 @@
     position: absolute;
     right: 0;
     top: 74px;
-    /* border-top: 1px solid var(--light-color); */
-    border-top: 1px solid rgb(60, 90, 16) !important;
+    border-top: 1px solid var(--light-color);
     width: 100vw;
   }
 
@@ -36,8 +36,7 @@
     position: absolute;
     right: 0;
     bottom: 45px;
-    /* border-bottom: 1px solid var(--light-color); */
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid var(--light-color);
     width: 100vw;
   }
 
@@ -366,8 +365,6 @@
     padding: 9px 54px;
     color: var(--black);
     background-color: transparent;
-    -webkit-transition: color 0.3s, border-color 0.3s, background 0.3s;
-    -o-transition: color 0.3s, border-color 0.3s, background 0.3s;
     transition: color 0.3s, border-color 0.3s, background 0.3s;
   }
 
@@ -495,7 +492,6 @@
 
   .footer-nav__list {
     columns: 3;
-    /* column-width: 64px; */
     column-gap: 173px;
   }
 
@@ -512,11 +508,6 @@
   .container {
     padding: 0 32px;
   }
-
-  /* .header::before,
-  .header::after {
-    
-  } */
 
   .nav__list {
     gap: 20px 43px;
@@ -548,7 +539,7 @@
 
   .header__nav {
     justify-content: flex-start;
-    overflow: scroll;
+    overflow: auto hidden;
     margin: 0;
     padding: 31px 0 15px;
     white-space: nowrap;
@@ -559,9 +550,11 @@
     gap: 25px;
   }
 
-  .header::before,
-  .header::after {
+  .header::before {
     top: 55px;
+  }
+
+  .header::after {
     bottom: 23px;
   }
 
@@ -632,8 +625,7 @@
     position: absolute;
     left: 0;
     bottom: 188px;
-    /* border-top: 1px solid var(--light-color); */
-    border-top: 1px solid lightcoral;
+    border-top: 1px solid var(--light-color);
     width: 100%;
   }
 
@@ -683,10 +675,6 @@
     stroke: currentcolor;
   }
 
-  .broadcast-card__btn:active {
-    color: var(--primary-shade);
-  }
-
   @media (any-hover: hover) {
     .broadcast-card__btn:hover {
       color: var(--black);
@@ -696,6 +684,10 @@
     svg {
       stroke: currentcolor;
     }
+  }
+
+  .broadcast-card__btn:active {
+    color: var(--primary-shade);
   }
 
   .broadcast-card__btn:active svg {
@@ -985,5 +977,4 @@
   .footer-registered::before {
     bottom: 21px;
   }
-
 }

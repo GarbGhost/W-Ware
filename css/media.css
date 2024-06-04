@@ -245,11 +245,11 @@
   .about__description::before {
     content: "";
     position: absolute;
-    left: -26%;
+    left: -21%;
     top: 60%;
     display: block;
     width: 100%;
-    height: clamp(10vh, 16vw, 30vh);
+    height: clamp(10vh, 16vw, 31vh);
     background: url("../image/icon/spiral-big.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@
     top: 60%;
     display: block;
     width: 21%;
-    height: clamp(10vh, 16vw, 30vh);
+    height: clamp(10vh, 16vw, 31vh);
     background: url("../image/icon/dawn-small.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -788,7 +788,7 @@
   }
 
   .play-list__image {
-    max-width: 192px;
+    max-width: 231px;
   }
 
   .play-list__image::before {

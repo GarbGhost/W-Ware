@@ -22,7 +22,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-right: 208px;
-  width: 638px
+  width: 638px;
 }
 
 .nav__list {
@@ -719,7 +719,7 @@
 }
 
 .play-list__image {
-  /* display: block; */
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   max-width: 160px;
 }
@@ -1035,6 +1035,8 @@
   -o-transition: border 0.4s ease-in-out 0.1s, background 0.4s ease-in-out 0.1s;
   -webkit-transition: border 0.4s ease-in-out 0.1s,
     background 0.4s ease-in-out 0.1s;
+  -webkit-transition: border 0.4s ease-in-out 0.1s,
+    background 0.4s ease-in-out 0.1s;
   transition: border 0.4s ease-in-out 0.1s, background 0.4s ease-in-out 0.1s;
   resize: none;
 }
@@ -1158,6 +1160,8 @@
   -webkit-transition: border 0.4s ease-in-out 0.1s,
     background 0.4s ease-in-out 0.1s;
   -o-transition: border 0.4s ease-in-out 0.1s, background 0.4s ease-in-out 0.1s;
+  -webkit-transition: border 0.4s ease-in-out 0.1s,
+    background 0.4s ease-in-out 0.1s;
   -webkit-transition: border 0.4s ease-in-out 0.1s,
     background 0.4s ease-in-out 0.1s;
   transition: border 0.4s ease-in-out 0.1s, background 0.4s ease-in-out 0.1s;
@@ -1410,6 +1414,9 @@
 }
 
 .footer-media {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 202px;
   gap: 16px;

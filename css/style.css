@@ -7,7 +7,6 @@
 .header__container {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
 }
@@ -23,6 +22,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-right: 208px;
+  width: 638px
 }
 
 .nav__list {
@@ -719,7 +719,8 @@
 }
 
 .play-list__image {
-  display: block;
+  /* display: block; */
+  flex-shrink: 0;
   max-width: 160px;
 }
 
@@ -1409,12 +1410,8 @@
 }
 
 .footer-media {
-  -ms-flex-direction: column;
   flex-direction: column;
-  padding-right: 30px;
-  max-width: 200px;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
+  max-width: 202px;
   gap: 16px;
 }
 

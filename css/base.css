@@ -35,6 +35,7 @@ body {
 }
 
 .container {
+  /* outline: 1px solid orange !important; */
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1170px;
@@ -122,10 +123,6 @@ p {
   background-color: var(--primary);
   -webkit-box-align: center;
   -ms-flex-align: center;
-}
-
-figure {
-  margin: 0;
 }
 
 .logo {

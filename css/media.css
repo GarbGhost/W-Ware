@@ -170,6 +170,10 @@
     margin-bottom: 28px;
   }
 
+  .about {
+    padding-bottom: 94px;
+  }
+
   .about__description {
     margin-bottom: 29px;
     width: 65%;
@@ -827,12 +831,12 @@
   }
 
   .playlists {
-    padding-top: 56px;
+    padding-top: 55px;
     padding-bottom: 51px;
   }
 
   .playlists__container {
-    gap: 36px;
+    gap: 37px;
   }
 
   .playlist-body {
@@ -948,12 +952,8 @@
     line-height: 158%;
   }
 
-  .about-card {
-    margin-bottom: 29px;
-  }
-
   .about-card__item {
-    gap: 14px;
+    gap: 13px;
   }
 
   .headline--about {

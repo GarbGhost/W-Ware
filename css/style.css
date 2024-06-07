@@ -910,7 +910,7 @@
 
 .about {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 93px;
   background: var(--black);
 }
 
@@ -1422,7 +1422,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 202px;
-  gap: 16px;
+  gap: 17px;
 }
 
 .footer__logo {

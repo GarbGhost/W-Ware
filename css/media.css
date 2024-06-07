@@ -1,4 +1,3 @@
-
 @media (max-width: 1100px) {
   .container {
     padding: 0 100px;
@@ -6,7 +5,7 @@
 
   .header {
     position: relative;
-    padding-top: 22px;
+    padding-top: 28px;
     padding-bottom: 45px;
   }
 
@@ -29,7 +28,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 74px;
+    top: 80px;
     border-top: 1px solid var(--light-color);
     width: 100vw;
   }
@@ -64,6 +63,10 @@
     margin-bottom: 20px;
   }
 
+  .broadcast {
+    padding-bottom: 94px;
+  }
+
   .broadcast__list {
     --offsets: 1;
 
@@ -80,7 +83,7 @@
 
   .guests {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 95px;
   }
 
   .guests__text {
@@ -425,6 +428,11 @@
     line-height: 150%;
   }
 
+  .guests {
+    padding-top: 95px;
+    padding-bottom: 93px;
+  }
+
   .guests__text {
     width: 100%;
   }
@@ -741,8 +749,7 @@
       color: var(--black);
     }
 
-    .broadcast-card__btn:hover,
-    svg {
+    .broadcast-card__btn:hover svg {
       stroke: currentcolor;
     }
   }
@@ -789,7 +796,7 @@
 
   .guests {
     padding-top: 55px;
-    padding-bottom: 53px;
+    padding-bottom: 52px;
   }
 
   .guests__title {
@@ -820,7 +827,7 @@
   }
 
   .playlists {
-    padding-top: 55px;
+    padding-top: 56px;
     padding-bottom: 51px;
   }
 
